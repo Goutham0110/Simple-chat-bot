@@ -1,0 +1,702 @@
+{"intents": [
+
+{"tag": "greeting",
+         "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up"],
+         "responses": ["Hello!", "Hi there, how can I help?","Nice to see you. How can I help you?","Hi. Is there something that I could do for you?"],
+         "context_set": ""
+        },
+{"tag": "name",
+         "patterns": ["what is your name", "what should I call you", "whats your name?","how should i call you"],
+         "responses": ["You can call me Tom.", "I'm Tom!", "My name is Tom"],
+         "context_set": ""
+        },
+{"tag": "purpose",
+         "patterns": ["what can you do", "what is the purpose of tom", "purpose of this chat bot","what can tom do","How can you help me","what is the purpose of this chat bot"],
+         "responses": ["I can answer questions regarding periodic table"],
+         "context_set": ""
+        },
+{"tag": "elements",
+         "patterns": ["How many elements are there in periodic table","number of elements","no of elements","what are elements"],
+	 "responses": ["There are a total of 118 elements divided into 18 groups and 7 periods"],
+         "context_set": ""
+        },
+
+{"tag": "group",
+         "patterns": ["how many groups are there in periodic table","number of groups","no of groups","What is a group"],
+         "responses": ["There are 18 groups in periodic table","A group is a vertical column of the periodic table, based on the organization of the outer shell electrons. There are a total of 18 groups."],
+         "context_set": ""
+        },
+{"tag": "periods",
+         "patterns": ["how many periods are there in periodic table", "number of periods","no of periods","What is a period"],
+         "responses": ["There are 7 periods in periodic table","A period is a horizontal row of the periodic table. There are seven periods in the periodic table, with each one beginning at the far left."],
+         "context_set": ""
+        },
+{"tag": "periodic table",
+ 	 "patterns": ["what is periodic table",],
+         "responses": ["The periodic table is used to organize all the known elements. Elements are arranged in the table by increasing atomic number.Rows of the periodic table are called periods and the columns are called groups.\nWe use only modern periodic table now"],
+         "context_set": ""
+        },
+{"tag": "modern periodic table",
+ 	 "patterns": ["what is modern periodic table","who invented modern periodic table","when modern periodic table was invented","how modern periodic table is different from periodic table","why should we use modern periodic table","who discovered modern periodic table","when modern periodic table was discovered","who invented periodic table","when periodic table was invented","who discovered periodic table","when periodic table was discoverd"],
+         "responses": ["Before 1869 the elements were arranged in eight groups and left no gaps for undiscovered elements. \nIn 1869, Russian chemist Dmitri Mendeleev created the framework that became the modern periodic table, leaving gaps for elements that were yet to be discovered.The elements are arranged based on their properties"]
+         "context_set": ""
+        }
+{"tag": "metals",
+         "patterns": ["what is a metal","what are metals","which are metals"],
+	 "responses": ["A metal is a material that, when freshly prepared, polished, or fractured, shows a lustrous appearance, and conducts electricity and heat relatively well. Metals are typically malleable (they can be hammered into thin sheets) or ductile (can be drawn into wires).","Metals are opaque, lustrous elements that are good conductors of heat and electricity. Most metals are malleable and ductile and are, in general, denser than the other elemental substances.","Properties of Metals:\n\n\nSome physical properties of metals are listed below.\n\nShiny (lustrous) in nature\nMetal is a good conductor of electricity and heat\nDensity and melting point is high\nMouldable (Malleable)\nDuctile\nAt room temperature, it is in solid form except for mercury\nOpaque\n\n\nSome chemical properties of metals are listed below.\n\nEasily corrodible\nCan lose electrons\nForm basic oxides\nHave low electronegativities\nGood reducing agents",
+"Many chemical elements are referred to as metals. These are the bulk of the periodic table elements. Generally, such components have the following characteristics: these can conduct heat and electricity. They can be easily shaped."],
+         "context_set": ""
+        },
+{"tag": "nonmetals",
+         "patterns": ["what is a nonmetal","what are nonmetals","which are nonmetals"],
+	 "responses": ["Properties of Non-Metals\n\n\nSome physical properties of non-metals are listed below.\n\nPoor conductors of electricity and heat\nNon-Ductile metals\nBrittle solids\nMaybe solids, liquids or gases at room temperature\nThese are not sonorous\nTransparent\n\n\nSome chemical properties of non-metals are listed below.\n\nThe number of electrons in the outer shell is generally 4-8\nEasily gain or lose valence electrons\nForm acidic oxides whenever they come in contact with oxygen\nHigh electronegative elements\nGreat oxidizing agents","Non-metal or non-metal is a chemical element that does not have metal’s properties. Some gases include hydrogen, helium, oxygen, nitrogen, fluorine, neon, or radon and many more."],
+         "context_set": ""
+        },
+{"tag": "metalloids",
+         "patterns": ["what are the eight metalloids","What are metalloids","properties of metalloids"],
+	 "responses": ["Following are the elements that are considered to be metalloids:\nBoron (B)\nSilicon (Si)\nGermanium (Ge)\nArsenic (As)\nAntimony (Sb)\nTellurium (Te)\nPolonium (Po)\n\nMetalloids have properties that are intermediate between metals and non-metals.\nThey have properties that are difficult to characterize.\n\nCommon Properties of Metalloids:\nMetalloids are good semiconductors.\nThe reactivity of metalloids is dependent on the properties of the elements they are reacting with.\nElectronegativity and ionization energy are between metals and non-metals."],
+         "context_set": ""
+        },
+{"tag": "Lanathanides",
+         "patterns": ["what are lanthanides",what is lanthanide","what are the properties of lanthanides"],
+	 "responses": ["The lanthanides comprise elements 57 (lanthanum, hence the name of the set) through 71. They are grouped together because they have similar chemical properties. They, along with the actinides, are often called \"the f-block elements\" because they have valence electrons in the f shell. They are all radioactive."],
+         "context_set": ""
+        },
+{"tag": "Actinides",
+         "patterns": ["what are actinides",what is actinide","what are the properties of actinides"],
+	 "responses": [" The actinides comprise elements 89 through 103. They, along with the lanthanides, are often called "the f-block elements" because they have valence electrons in the f shell. Only thorium and uranium are naturally occurring actinides with significant abundance. They are all radioactive."],
+         "context_set": ""
+        },
+
+{"tag": "Noble Gases",
+         "patterns": ["what are noble gases",what is noble gas","what are the properties of noble gases","what are inert gases",what is inert gas","what are the properties of inert gases","noble gases","noblegases","noble gas"],
+	 "responses": [" The noble gases comprise group 18. They are generally very stable chemically and exhibit similar properties of being colorless and odorless. The noble gases are helium (He), neon (Ne), argon (Ar), krypton (Kr), xenon (Xe), radon (Rn), and oganesson (Og)."],
+         "context_set": ""
+        },
+{"tag": "Halogens",
+         "patterns": ["what are halogens",what is halogen","what are the properties of halogens","why are they called halogens"],
+	 "responses": ["The halogen elements are a subset of the nonmetals. They comprise group 17 of the periodic table, from F through At. They generally very chemically reactive and are present in the environment as compounds rather than as pure elements."],
+         "context_set": ""
+        },
+{"tag": "Chalcogens",
+         "patterns": ["what are chalcogens",what is chalcogen","what are the properties of chalcogens","why are they called chalcogens"],
+	 "responses": ["The chalcogens are the chemical elements in group 16 of the periodic table. This group is also known as the oxygen family. It consists of the elements oxygen (O), sulfur (S), selenium (Se), tellurium (Te), and the radioactive element polonium (Po).\nThe group is called chalcogens because most ores of copper are oxides or sulfides, and such ores contain traces of selenium and tellurium."],
+         "context_set": ""
+        },
+{"tag": "Alkali metals",
+         "patterns": ["what are alkali metals",what is alkali metals","what are the properties of alkali metals","why are they called alkali metals","what are alkalimetals",what is alkalimetals","what are the properties of alkalimetals","why are they called alkalimetals","alkali metals"],
+	 "responses": ["The alkali metals make up group 1 of the Table, and comprise Li through Fr. They have very similar behavior and characteristics. Hydrogen is group 1 but exhibits few characteristics of a metal and is often categorized with the nonmetals."],
+         "context_set": ""
+        },
+{"tag": "Alkali earth metals",
+         "patterns": ["what are alkali earth metals",what is alkali earth metals","what are the properties of alkali earth metals","why are they called alkali earth metals"],
+	 "responses": ["The alkaline earth metals make up group 2 of the periodic table, from Be through Ra. The alkaline earth metals have very high melting points and oxides that have basic alkaline solutions. Their characteristics are well described and consistent down the group."],
+         "context_set": ""
+        },
+
+{"tag": "Transition metals",
+         "patterns": ["what are transition metals",what is transition metal","what are the properties of transition metals"],
+	 "responses": ["The transition elements are metals that have a partially filled d subshell and comprise groups 3 through 12 and the lanthanides and actinides"],
+         "context_set": ""
+        },
+
+{"tag": "Post-transition metals",
+         "patterns": ["what are post transition metals",what is post transition metal","what are the properties of post transition metals"],
+	 "responses": ["The post-transition elements are Al, Ga, In, Tl, Sn, Pb and Bi. As their name implies, they have some of the characteristics of the transition elements. They tend to be softer and conduct more poorly than the transition metals."],
+         "context_set": ""
+        },
+{"tag": "Hydrogen",
+         "patterns": ["what is the symbol of  hydrogen ", "how is  hydrogen  represented", "how is  hydrogen  represented in symbol", "symbol of  hydrogen ", "what is the atomic number of  hydrogen ", "atomic number of  hydrogen ", "what is the electronic configuration of  hydrogen ", "electronic configuration of  hydrogen ", "Which group does  hydrogen  belongs to", "group of  hydrogen ", "Which period does  hydrogen  belongs to", "period of  hydrogen ", "what is the use of  hydrogen ", "use of  hydrogen ", "application of  hydrogen ", "what are the applications of  hydrogen ", "what is the atomic weight of  hydrogen ", "atomic weight of  hydrogen ", "give brief account of  hydrogen ", "describe  hydrogen ", "what is the mass number of the  hydrogen ", "mass number of the  hydrogen "],
+         "responses": ["Atomic Number: 1 \n\nName: Hydrogen \n\nSymbol: H \n\nGroup in periodic table: 1 \n\nAtomic Weight: 1.008 \n\nElectronic Configuration: 1s1 \n\nUses:  rocket fuel "],
+         "context_set": ""
+        },
+{"tag": "Helium",
+         "patterns": ["what is the symbol of  helium ", "how is  helium  represented", "how is  helium  represented in symbol", "symbol of  helium ", "what is the atomic number of  helium ", "atomic number of  helium ", "what is the electronic configuration of  helium ", "electronic configuration of  helium ", "Which group does  helium  belongs to", "group of  helium ", "Which period does  helium  belongs to", "period of  helium ", "what is the use of  helium ", "use of  helium ", "application of  helium ", "what are the applications of  helium ", "what is the atomic weight of  helium ", "atomic weight of  helium ", "give brief account of  helium ", "describe  helium ", "what is the mass number of the  helium ", "mass number of the  helium "],
+         "responses": ["Atomic Number: 2 \n\nName: Helium \n\nSymbol: He \n\nGroup in periodic table: 18 \n\nAtomic Weight: 4.003 \n\nElectronic Configuration: 1s2 \n\nUses:  arc welding "],
+         "context_set": ""
+        },
+{"tag": "Lithium",
+         "patterns": ["what is the symbol of  lithium ", "how is  lithium  represented", "how is  lithium  represented in symbol", "symbol of  lithium ", "what is the atomic number of  lithium ", "atomic number of  lithium ", "what is the electronic configuration of  lithium ", "electronic configuration of  lithium ", "Which group does  lithium  belongs to", "group of  lithium ", "Which period does  lithium  belongs to", "period of  lithium ", "what is the use of  lithium ", "use of  lithium ", "application of  lithium ", "what are the applications of  lithium ", "what is the atomic weight of  lithium ", "atomic weight of  lithium ", "give brief account of  lithium ", "describe  lithium ", "what is the mass number of the  lithium ", "mass number of the  lithium "],
+         "responses": ["Atomic Number: 3 \n\nName: Lithium \n\nSymbol: Li \n\nGroup in periodic table: 1 \n\nAtomic Weight: 6.941 \n\nElectronic Configuration: [He] 2s1 \n\nUses:  batteries "],
+         "context_set": ""
+        },
+{"tag": "Beryllium",
+         "patterns": ["what is the symbol of  beryllium ", "how is  beryllium  represented", "how is  beryllium  represented in symbol", "symbol of  beryllium ", "what is the atomic number of  beryllium ", "atomic number of  beryllium ", "what is the electronic configuration of  beryllium ", "electronic configuration of  beryllium ", "Which group does  beryllium  belongs to", "group of  beryllium ", "Which period does  beryllium  belongs to", "period of  beryllium ", "what is the use of  beryllium ", "use of  beryllium ", "application of  beryllium ", "what are the applications of  beryllium ", "what is the atomic weight of  beryllium ", "atomic weight of  beryllium ", "give brief account of  beryllium ", "describe  beryllium ", "what is the mass number of the  beryllium ", "mass number of the  beryllium "],
+         "responses": ["Atomic Number: 4 \n\nName: Beryllium \n\nSymbol: Be \n\nGroup in periodic table: 2 \n\nAtomic Weight: 9.012 \n\nElectronic Configuration: [He] 2s2 \n\nUses:  aerospace industry "],
+         "context_set": ""
+        },
+{"tag": "Boron",
+         "patterns": ["what is the symbol of  boron ", "how is  boron  represented", "how is  boron  represented in symbol", "symbol of  boron ", "what is the atomic number of  boron ", "atomic number of  boron ", "what is the electronic configuration of  boron ", "electronic configuration of  boron ", "Which group does  boron  belongs to", "group of  boron ", "Which period does  boron  belongs to", "period of  boron ", "what is the use of  boron ", "use of  boron ", "application of  boron ", "what are the applications of  boron ", "what is the atomic weight of  boron ", "atomic weight of  boron ", "give brief account of  boron ", "describe  boron ", "what is the mass number of the  boron ", "mass number of the  boron "],
+         "responses": ["Atomic Number: 5 \n\nName: Boron \n\nSymbol: B \n\nGroup in periodic table: 13 \n\nAtomic Weight: 10.811 \n\nElectronic Configuration: [He] 2s2 2p1 \n\nUses:  pyrotechnics "],
+         "context_set": ""
+        },
+{"tag": "Carbon",
+         "patterns": ["what is the symbol of  carbon ", "how is  carbon  represented", "how is  carbon  represented in symbol", "symbol of  carbon ", "what is the atomic number of  carbon ", "atomic number of  carbon ", "what is the electronic configuration of  carbon ", "electronic configuration of  carbon ", "Which group does  carbon  belongs to", "group of  carbon ", "Which period does  carbon  belongs to", "period of  carbon ", "what is the use of  carbon ", "use of  carbon ", "application of  carbon ", "what are the applications of  carbon ", "what is the atomic weight of  carbon ", "atomic weight of  carbon ", "give brief account of  carbon ", "describe  carbon ", "what is the mass number of the  carbon ", "mass number of the  carbon "],
+         "responses": ["Atomic Number: 6 \n\nName: Carbon \n\nSymbol: C \n\nGroup in periodic table: 14 \n\nAtomic Weight: 12.011 \n\nElectronic Configuration: [He] 2s2 2p2 \n\nUses:  charcoal "],
+         "context_set": ""
+        },
+{"tag": "Nitrogen",
+         "patterns": ["what is the symbol of  nitrogen ", "how is  nitrogen  represented", "how is  nitrogen  represented in symbol", "symbol of  nitrogen ", "what is the atomic number of  nitrogen ", "atomic number of  nitrogen ", "what is the electronic configuration of  nitrogen ", "electronic configuration of  nitrogen ", "Which group does  nitrogen  belongs to", "group of  nitrogen ", "Which period does  nitrogen  belongs to", "period of  nitrogen ", "what is the use of  nitrogen ", "use of  nitrogen ", "application of  nitrogen ", "what are the applications of  nitrogen ", "what is the atomic weight of  nitrogen ", "atomic weight of  nitrogen ", "give brief account of  nitrogen ", "describe  nitrogen ", "what is the mass number of the  nitrogen ", "mass number of the  nitrogen "],
+         "responses": ["Atomic Number: 7 \n\nName: Nitrogen \n\nSymbol: N \n\nGroup in periodic table: 15 \n\nAtomic Weight: 14.007 \n\nElectronic Configuration: [He] 2s2 2p3 \n\nUses:  nylon "],
+         "context_set": ""
+        },
+{"tag": "Oxygen",
+         "patterns": ["what is the symbol of  oxygen ", "how is  oxygen  represented", "how is  oxygen  represented in symbol", "symbol of  oxygen ", "what is the atomic number of  oxygen ", "atomic number of  oxygen ", "what is the electronic configuration of  oxygen ", "electronic configuration of  oxygen ", "Which group does  oxygen  belongs to", "group of  oxygen ", "Which period does  oxygen  belongs to", "period of  oxygen ", "what is the use of  oxygen ", "use of  oxygen ", "application of  oxygen ", "what are the applications of  oxygen ", "what is the atomic weight of  oxygen ", "atomic weight of  oxygen ", "give brief account of  oxygen ", "describe  oxygen ", "what is the mass number of the  oxygen ", "mass number of the  oxygen "],
+         "responses": ["Atomic Number: 8 \n\nName: Oxygen \n\nSymbol: O \n\nGroup in periodic table: 16 \n\nAtomic Weight: 15.999 \n\nElectronic Configuration: [He] 2s2 2p4 \n\nUses:  antifreeze "],
+         "context_set": ""
+        },
+{"tag": "Fluorine",
+         "patterns": ["what is the symbol of  fluorine ", "how is  fluorine  represented", "how is  fluorine  represented in symbol", "symbol of  fluorine ", "what is the atomic number of  fluorine ", "atomic number of  fluorine ", "what is the electronic configuration of  fluorine ", "electronic configuration of  fluorine ", "Which group does  fluorine  belongs to", "group of  fluorine ", "Which period does  fluorine  belongs to", "period of  fluorine ", "what is the use of  fluorine ", "use of  fluorine ", "application of  fluorine ", "what are the applications of  fluorine ", "what is the atomic weight of  fluorine ", "atomic weight of  fluorine ", "give brief account of  fluorine ", "describe  fluorine ", "what is the mass number of the  fluorine ", "mass number of the  fluorine "],
+         "responses": ["Atomic Number: 9 \n\nName: Fluorine \n\nSymbol: F \n\nGroup in periodic table: 17 \n\nAtomic Weight: 18.998 \n\nElectronic Configuration: [He] 2s2 2p5 \n\nUses:  toothpaste "],
+         "context_set": ""
+        },
+{"tag": "Neon",
+         "patterns": ["what is the symbol of  neon ", "how is  neon  represented", "how is  neon  represented in symbol", "symbol of  neon ", "what is the atomic number of  neon ", "atomic number of  neon ", "what is the electronic configuration of  neon ", "electronic configuration of  neon ", "Which group does  neon  belongs to", "group of  neon ", "Which period does  neon  belongs to", "period of  neon ", "what is the use of  neon ", "use of  neon ", "application of  neon ", "what are the applications of  neon ", "what is the atomic weight of  neon ", "atomic weight of  neon ", "give brief account of  neon ", "describe  neon ", "what is the mass number of the  neon ", "mass number of the  neon "],
+         "responses": ["Atomic Number: 10 \n\nName: Neon \n\nSymbol: Ne \n\nGroup in periodic table: 18 \n\nAtomic Weight: 20.18 \n\nElectronic Configuration: [He] 2s2 2p6 \n\nUses:  cryogenic refrigerant "],
+         "context_set": ""
+        },
+{"tag": "Sodium",
+         "patterns": ["what is the symbol of  sodium ", "how is  sodium  represented", "how is  sodium  represented in symbol", "symbol of  sodium ", "what is the atomic number of  sodium ", "atomic number of  sodium ", "what is the electronic configuration of  sodium ", "electronic configuration of  sodium ", "Which group does  sodium  belongs to", "group of  sodium ", "Which period does  sodium  belongs to", "period of  sodium ", "what is the use of  sodium ", "use of  sodium ", "application of  sodium ", "what are the applications of  sodium ", "what is the atomic weight of  sodium ", "atomic weight of  sodium ", "give brief account of  sodium ", "describe  sodium ", "what is the mass number of the  sodium ", "mass number of the  sodium "],
+         "responses": ["Atomic Number: 11 \n\nName: Sodium \n\nSymbol: Na \n\nGroup in periodic table: 1 \n\nAtomic Weight: 22.99 \n\nElectronic Configuration: [Ne] 3s1 \n\nUses:  table salt"],
+         "context_set": ""
+        },
+{"tag": "Magnesium",
+         "patterns": ["what is the symbol of  magnesium ", "how is  magnesium  represented", "how is  magnesium  represented in symbol", "symbol of  magnesium ", "what is the atomic number of  magnesium ", "atomic number of  magnesium ", "what is the electronic configuration of  magnesium ", "electronic configuration of  magnesium ", "Which group does  magnesium  belongs to", "group of  magnesium ", "Which period does  magnesium  belongs to", "period of  magnesium ", "what is the use of  magnesium ", "use of  magnesium ", "application of  magnesium ", "what are the applications of  magnesium ", "what is the atomic weight of  magnesium ", "atomic weight of  magnesium ", "give brief account of  magnesium ", "describe  magnesium ", "what is the mass number of the  magnesium ", "mass number of the  magnesium "],
+         "responses": ["Atomic Number: 12 \n\nName: Magnesium \n\nSymbol: Mg \n\nGroup in periodic table: 2 \n\nAtomic Weight: 24.305 \n\nElectronic Configuration: [Ne] 3s2 \n\nUses:  heat-resistant bricks "],
+         "context_set": ""
+        },
+{"tag": "Aluminum",
+         "patterns": ["what is the symbol of  aluminum ", "how is  aluminum  represented", "how is  aluminum  represented in symbol", "symbol of  aluminum ", "what is the atomic number of  aluminum ", "atomic number of  aluminum ", "what is the electronic configuration of  aluminum ", "electronic configuration of  aluminum ", "Which group does  aluminum  belongs to", "group of  aluminum ", "Which period does  aluminum  belongs to", "period of  aluminum ", "what is the use of  aluminum ", "use of  aluminum ", "application of  aluminum ", "what are the applications of  aluminum ", "what is the atomic weight of  aluminum ", "atomic weight of  aluminum ", "give brief account of  aluminum ", "describe  aluminum ", "what is the mass number of the  aluminum ", "mass number of the  aluminum "],
+         "responses": ["Atomic Number: 13 \n\nName: Aluminum \n\nSymbol: Al \n\nGroup in periodic table: 13 \n\nAtomic Weight: 26.982 \n\nElectronic Configuration: [Ne] 3s2 3p1 \n\nUses:  utensils "],
+         "context_set": ""
+        },
+{"tag": "Silicon",
+         "patterns": ["what is the symbol of  silicon ", "how is  silicon  represented", "how is  silicon  represented in symbol", "symbol of  silicon ", "what is the atomic number of  silicon ", "atomic number of  silicon ", "what is the electronic configuration of  silicon ", "electronic configuration of  silicon ", "Which group does  silicon  belongs to", "group of  silicon ", "Which period does  silicon  belongs to", "period of  silicon ", "what is the use of  silicon ", "use of  silicon ", "application of  silicon ", "what are the applications of  silicon ", "what is the atomic weight of  silicon ", "atomic weight of  silicon ", "give brief account of  silicon ", "describe  silicon ", "what is the mass number of the  silicon ", "mass number of the  silicon "],
+         "responses": ["Atomic Number: 14 \n\nName: Silicon \n\nSymbol: Si \n\nGroup in periodic table: 14 \n\nAtomic Weight: 28.086 \n\nElectronic Configuration: [Ne] 3s2 3p2 \n\nUses:  semiconductor "],
+         "context_set": ""
+        },
+{"tag": "Phosphorus",
+         "patterns": ["what is the symbol of  phosphorus ", "how is  phosphorus  represented", "how is  phosphorus  represented in symbol", "symbol of  phosphorus ", "what is the atomic number of  phosphorus ", "atomic number of  phosphorus ", "what is the electronic configuration of  phosphorus ", "electronic configuration of  phosphorus ", "Which group does  phosphorus  belongs to", "group of  phosphorus ", "Which period does  phosphorus  belongs to", "period of  phosphorus ", "what is the use of  phosphorus ", "use of  phosphorus ", "application of  phosphorus ", "what are the applications of  phosphorus ", "what is the atomic weight of  phosphorus ", "atomic weight of  phosphorus ", "give brief account of  phosphorus ", "describe  phosphorus ", "what is the mass number of the  phosphorus ", "mass number of the  phosphorus "],
+         "responses": ["Atomic Number: 15 \n\nName: Phosphorus \n\nSymbol: P \n\nGroup in periodic table: 15 \n\nAtomic Weight: 30.974 \n\nElectronic Configuration: [Ne] 3s2 3p3 \n\nUses:  steel "],
+         "context_set": ""
+        },
+{"tag": "Sulfur",
+         "patterns": ["what is the symbol of  sulfur ", "how is  sulfur  represented", "how is  sulfur  represented in symbol", "symbol of  sulfur ", "what is the atomic number of  sulfur ", "atomic number of  sulfur ", "what is the electronic configuration of  sulfur ", "electronic configuration of  sulfur ", "Which group does  sulfur  belongs to", "group of  sulfur ", "Which period does  sulfur  belongs to", "period of  sulfur ", "what is the use of  sulfur ", "use of  sulfur ", "application of  sulfur ", "what are the applications of  sulfur ", "what is the atomic weight of  sulfur ", "atomic weight of  sulfur ", "give brief account of  sulfur ", "describe  sulfur ", "what is the mass number of the  sulfur ", "mass number of the  sulfur "],
+         "responses": ["Atomic Number: 16 \n\nName: Sulfur \n\nSymbol: S \n\nGroup in periodic table: 16 \n\nAtomic Weight: 32.065 \n\nElectronic Configuration: [Ne] 3s2 3p4 \n\nUses:  gunpowder "],
+         "context_set": ""
+        },
+{"tag": "Chlorine",
+         "patterns": ["what is the symbol of  chlorine ", "how is  chlorine  represented", "how is  chlorine  represented in symbol", "symbol of  chlorine ", "what is the atomic number of  chlorine ", "atomic number of  chlorine ", "what is the electronic configuration of  chlorine ", "electronic configuration of  chlorine ", "Which group does  chlorine  belongs to", "group of  chlorine ", "Which period does  chlorine  belongs to", "period of  chlorine ", "what is the use of  chlorine ", "use of  chlorine ", "application of  chlorine ", "what are the applications of  chlorine ", "what is the atomic weight of  chlorine ", "atomic weight of  chlorine ", "give brief account of  chlorine ", "describe  chlorine ", "what is the mass number of the  chlorine ", "mass number of the  chlorine "],
+         "responses": ["Atomic Number: 17 \n\nName: Chlorine \n\nSymbol: Cl \n\nGroup in periodic table: 17 \n\nAtomic Weight: 35.453 \n\nElectronic Configuration: [Ne] 3s2 3p5 \n\nUses:  antiseptic "],
+         "context_set": ""
+        },
+{"tag": "Argon",
+         "patterns": ["what is the symbol of  argon ", "how is  argon  represented", "how is  argon  represented in symbol", "symbol of  argon ", "what is the atomic number of  argon ", "atomic number of  argon ", "what is the electronic configuration of  argon ", "electronic configuration of  argon ", "Which group does  argon  belongs to", "group of  argon ", "Which period does  argon  belongs to", "period of  argon ", "what is the use of  argon ", "use of  argon ", "application of  argon ", "what are the applications of  argon ", "what is the atomic weight of  argon ", "atomic weight of  argon ", "give brief account of  argon ", "describe  argon ", "what is the mass number of the  argon ", "mass number of the  argon "],
+         "responses": ["Atomic Number: 18 \n\nName: Argon \n\nSymbol: Ar \n\nGroup in periodic table: 18 \n\nAtomic Weight: 39.948 \n\nElectronic Configuration: [Ne] 3s2 3p6 \n\nUses:  fluorescent bulbs "],
+         "context_set": ""
+        },
+{"tag": "Potassium",
+         "patterns": ["what is the symbol of  potassium ", "how is  potassium  represented", "how is  potassium  represented in symbol", "symbol of  potassium ", "what is the atomic number of  potassium ", "atomic number of  potassium ", "what is the electronic configuration of  potassium ", "electronic configuration of  potassium ", "Which group does  potassium  belongs to", "group of  potassium ", "Which period does  potassium  belongs to", "period of  potassium ", "what is the use of  potassium ", "use of  potassium ", "application of  potassium ", "what are the applications of  potassium ", "what is the atomic weight of  potassium ", "atomic weight of  potassium ", "give brief account of  potassium ", "describe  potassium ", "what is the mass number of the  potassium ", "mass number of the  potassium "],
+         "responses": ["Atomic Number: 19 \n\nName: Potassium \n\nSymbol: K \n\nGroup in periodic table: 1 \n\nAtomic Weight: 39.098 \n\nElectronic Configuration: [Ar] 4s1 \n\nUses:  pharmaceuticals "],
+         "context_set": ""
+        },
+{"tag": "Calcium",
+         "patterns": ["what is the symbol of  calcium ", "how is  calcium  represented", "how is  calcium  represented in symbol", "symbol of  calcium ", "what is the atomic number of  calcium ", "atomic number of  calcium ", "what is the electronic configuration of  calcium ", "electronic configuration of  calcium ", "Which group does  calcium  belongs to", "group of  calcium ", "Which period does  calcium  belongs to", "period of  calcium ", "what is the use of  calcium ", "use of  calcium ", "application of  calcium ", "what are the applications of  calcium ", "what is the atomic weight of  calcium ", "atomic weight of  calcium ", "give brief account of  calcium ", "describe  calcium ", "what is the mass number of the  calcium ", "mass number of the  calcium "],
+         "responses": ["Atomic Number: 20 \n\nName: Calcium \n\nSymbol: Ca \n\nGroup in periodic table: 2 \n\nAtomic Weight: 40.078 \n\nElectronic Configuration: [Ar] 4s2 \n\nUses:  alloying agent "],
+         "context_set": ""
+        },
+{"tag": "Scandium",
+         "patterns": ["what is the symbol of  scandium ", "how is  scandium  represented", "how is  scandium  represented in symbol", "symbol of  scandium ", "what is the atomic number of  scandium ", "atomic number of  scandium ", "what is the electronic configuration of  scandium ", "electronic configuration of  scandium ", "Which group does  scandium  belongs to", "group of  scandium ", "Which period does  scandium  belongs to", "period of  scandium ", "what is the use of  scandium ", "use of  scandium ", "application of  scandium ", "what are the applications of  scandium ", "what is the atomic weight of  scandium ", "atomic weight of  scandium ", "give brief account of  scandium ", "describe  scandium ", "what is the mass number of the  scandium ", "mass number of the  scandium "],
+         "responses": ["Atomic Number: 21 \n\nName: Scandium \n\nSymbol: Sc \n\nGroup in periodic table: 3 \n\nAtomic Weight: 44.956 \n\nElectronic Configuration: [Ar] 3d1 4s2 \n\nUses:  mercury vapor lamps "],
+         "context_set": ""
+        },
+{"tag": "Titanium",
+         "patterns": ["what is the symbol of  titanium ", "how is  titanium  represented", "how is  titanium  represented in symbol", "symbol of  titanium ", "what is the atomic number of  titanium ", "atomic number of  titanium ", "what is the electronic configuration of  titanium ", "electronic configuration of  titanium ", "Which group does  titanium  belongs to", "group of  titanium ", "Which period does  titanium  belongs to", "period of  titanium ", "what is the use of  titanium ", "use of  titanium ", "application of  titanium ", "what are the applications of  titanium ", "what is the atomic weight of  titanium ", "atomic weight of  titanium ", "give brief account of  titanium ", "describe  titanium ", "what is the mass number of the  titanium ", "mass number of the  titanium "],
+         "responses": ["Atomic Number: 22 \n\nName: Titanium \n\nSymbol: Ti \n\nGroup in periodic table: 4 \n\nAtomic Weight: 47.867 \n\nElectronic Configuration: [Ar] 3d2 4s2 \n\nUses:  engines "],
+         "context_set": ""
+        },
+{"tag": "Vanadium",
+         "patterns": ["what is the symbol of  vanadium ", "how is  vanadium  represented", "how is  vanadium  represented in symbol", "symbol of  vanadium ", "what is the atomic number of  vanadium ", "atomic number of  vanadium ", "what is the electronic configuration of  vanadium ", "electronic configuration of  vanadium ", "Which group does  vanadium  belongs to", "group of  vanadium ", "Which period does  vanadium  belongs to", "period of  vanadium ", "what is the use of  vanadium ", "use of  vanadium ", "application of  vanadium ", "what are the applications of  vanadium ", "what is the atomic weight of  vanadium ", "atomic weight of  vanadium ", "give brief account of  vanadium ", "describe  vanadium ", "what is the mass number of the  vanadium ", "mass number of the  vanadium "],
+         "responses": ["Atomic Number: 23 \n\nName: Vanadium \n\nSymbol: V \n\nGroup in periodic table: 5 \n\nAtomic Weight: 50.942 \n\nElectronic Configuration: [Ar] 3d3 4s2 \n\nUses:  jet engines "],
+         "context_set": ""
+        },
+{"tag": "Chromium",
+         "patterns": ["what is the symbol of  chromium ", "how is  chromium  represented", "how is  chromium  represented in symbol", "symbol of  chromium ", "what is the atomic number of  chromium ", "atomic number of  chromium ", "what is the electronic configuration of  chromium ", "electronic configuration of  chromium ", "Which group does  chromium  belongs to", "group of  chromium ", "Which period does  chromium  belongs to", "period of  chromium ", "what is the use of  chromium ", "use of  chromium ", "application of  chromium ", "what are the applications of  chromium ", "what is the atomic weight of  chromium ", "atomic weight of  chromium ", "give brief account of  chromium ", "describe  chromium ", "what is the mass number of the  chromium ", "mass number of the  chromium "],
+         "responses": ["Atomic Number: 24 \n\nName: Chromium \n\nSymbol: Cr \n\nGroup in periodic table: 6 \n\nAtomic Weight: 51.996 \n\nElectronic Configuration: [Ar] 3d5 4s1 \n\nUses:  stainless steel "],
+         "context_set": ""
+        },
+{"tag": "Manganese",
+         "patterns": ["what is the symbol of  manganese ", "how is  manganese  represented", "how is  manganese  represented in symbol", "symbol of  manganese ", "what is the atomic number of  manganese ", "atomic number of  manganese ", "what is the electronic configuration of  manganese ", "electronic configuration of  manganese ", "Which group does  manganese  belongs to", "group of  manganese ", "Which period does  manganese  belongs to", "period of  manganese ", "what is the use of  manganese ", "use of  manganese ", "application of  manganese ", "what are the applications of  manganese ", "what is the atomic weight of  manganese ", "atomic weight of  manganese ", "give brief account of  manganese ", "describe  manganese ", "what is the mass number of the  manganese ", "mass number of the  manganese "],
+         "responses": ["Atomic Number: 25 \n\nName: Manganese \n\nSymbol: Mn \n\nGroup in periodic table: 7 \n\nAtomic Weight: 54.938 \n\nElectronic Configuration: [Ar] 3d5 4s2 \n\nUses:  glass "],
+         "context_set": ""
+        },
+{"tag": "Iron",
+         "patterns": ["what is the symbol of  iron ", "how is  iron  represented", "how is  iron  represented in symbol", "symbol of  iron ", "what is the atomic number of  iron ", "atomic number of  iron ", "what is the electronic configuration of  iron ", "electronic configuration of  iron ", "Which group does  iron  belongs to", "group of  iron ", "Which period does  iron  belongs to", "period of  iron ", "what is the use of  iron ", "use of  iron ", "application of  iron ", "what are the applications of  iron ", "what is the atomic weight of  iron ", "atomic weight of  iron ", "give brief account of  iron ", "describe  iron ", "what is the mass number of the  iron ", "mass number of the  iron "],
+         "responses": ["Atomic Number: 26 \n\nName: Iron \n\nSymbol: Fe \n\nGroup in periodic table: 8 \n\nAtomic Weight: 55.845\n\nElectronic Configuration: [Ar] 3d6 4s2 \n\nUses: making steel"],
+         "context_set": ""
+        },
+{"tag": "Cobalt",
+         "patterns": ["what is the symbol of  cobalt ", "how is  cobalt  represented", "how is  cobalt  represented in symbol", "symbol of  cobalt ", "what is the atomic number of  cobalt ", "atomic number of  cobalt ", "what is the electronic configuration of  cobalt ", "electronic configuration of  cobalt ", "Which group does  cobalt  belongs to", "group of  cobalt ", "Which period does  cobalt  belongs to", "period of  cobalt ", "what is the use of  cobalt ", "use of  cobalt ", "application of  cobalt ", "what are the applications of  cobalt ", "what is the atomic weight of  cobalt ", "atomic weight of  cobalt ", "give brief account of  cobalt ", "describe  cobalt ", "what is the mass number of the  cobalt ", "mass number of the  cobalt "],
+         "responses": ["Atomic Number: 26 \n\nName: Iron \n\nSymbol: Fe \n\nGroup in periodic table: 8 \n\nAtomic Weight: 55.845\n\nElectronic Configuration: [Ar] 3d6 4s2 \n\nUses: making steel"],
+         "context_set": ""
+        },
+{"tag": "Nickel",
+         "patterns": ["what is the symbol of  nickel ", "how is  nickel  represented", "how is  nickel  represented in symbol", "symbol of  nickel ", "what is the atomic number of  nickel ", "atomic number of  nickel ", "what is the electronic configuration of  nickel ", "electronic configuration of  nickel ", "Which group does  nickel  belongs to", "group of  nickel ", "Which period does  nickel  belongs to", "period of  nickel ", "what is the use of  nickel ", "use of  nickel ", "application of  nickel ", "what are the applications of  nickel ", "what is the atomic weight of  nickel ", "atomic weight of  nickel ", "give brief account of  nickel ", "describe  nickel ", "what is the mass number of the  nickel ", "mass number of the  nickel "],
+         "responses": ["Atomic Number: 28 \n\nName: Nickel \n\nSymbol: Ni \n\nGroup in periodic table: 10 \n\nAtomic Weight:58.693 \n\nElectronic Configuration: [Ar] 3d8 4s2 \n\nUses: desalination"],
+         "context_set": ""
+        },
+{"tag": "Copper",
+         "patterns": ["what is the symbol of  copper ", "how is  copper  represented", "how is  copper  represented in symbol", "symbol of  copper ", "what is the atomic number of  copper ", "atomic number of  copper ", "what is the electronic configuration of  copper ", "electronic configuration of  copper ", "Which group does  copper  belongs to", "group of  copper ", "Which period does  copper  belongs to", "period of  copper ", "what is the use of  copper ", "use of  copper ", "application of  copper ", "what are the applications of  copper ", "what is the atomic weight of  copper ", "atomic weight of  copper ", "give brief account of  copper ", "describe  copper ", "what is the mass number of the  copper ", "mass number of the  copper "],
+         "responses": ["Atomic Number: 29 \n\nName: Copper \n\nSymbol: Cu \n\nGroup in periodic table: 11 \n\nAtomic Weight:63.546 \n\nElectronic Configuration: [Ar] 3d10 4s1 \n\nUses: radiators"],
+         "context_set": ""
+        },
+{"tag": "Zinc",
+         "patterns": ["what is the symbol of  zinc ", "how is  zinc  represented", "how is  zinc  represented in symbol", "symbol of  zinc ", "what is the atomic number of  zinc ", "atomic number of  zinc ", "what is the electronic configuration of  zinc ", "electronic configuration of  zinc ", "Which group does  zinc  belongs to", "group of  zinc ", "Which period does  zinc  belongs to", "period of  zinc ", "what is the use of  zinc ", "use of  zinc ", "application of  zinc ", "what are the applications of  zinc ", "what is the atomic weight of  zinc ", "atomic weight of  zinc ", "give brief account of  zinc ", "describe  zinc ", "what is the mass number of the  zinc ", "mass number of the  zinc "],
+         "responses": ["Atomic Number: 30 \n\nName: Zinc \n\nSymbol: Zn \n\nGroup in periodic table: 12 \n\nAtomic Weight:65.39 \n\nElectronic Configuration: [Ar] 3d10 4s2 \n\nUses: cosmetics"],
+         "context_set": ""
+        },
+{"tag": "Gallium",
+         "patterns": ["what is the symbol of  gallium ", "how is  gallium  represented", "how is  gallium  represented in symbol", "symbol of  gallium ", "what is the atomic number of  gallium ", "atomic number of  gallium ", "what is the electronic configuration of  gallium ", "electronic configuration of  gallium ", "Which group does  gallium  belongs to", "group of  gallium ", "Which period does  gallium  belongs to", "period of  gallium ", "what is the use of  gallium ", "use of  gallium ", "application of  gallium ", "what are the applications of  gallium ", "what is the atomic weight of  gallium ", "atomic weight of  gallium ", "give brief account of  gallium ", "describe  gallium ", "what is the mass number of the  gallium ", "mass number of the  gallium "],
+         "responses": ["Atomic Number: 31 \n\nName: Gallium \n\nSymbol: Ga \n\nGroup in periodic table: 13 \n\nAtomic Weight:69.723 \n\nElectronic Configuration: [Ar] 3d10 4s2 4p1 \n\nUses: medical thermometers"],
+         "context_set": ""
+        },
+{"tag": "Germanium",
+         "patterns": ["what is the symbol of  germanium ", "how is  germanium  represented", "how is  germanium  represented in symbol", "symbol of  germanium ", "what is the atomic number of  germanium ", "atomic number of  germanium ", "what is the electronic configuration of  germanium ", "electronic configuration of  germanium ", "Which group does  germanium  belongs to", "group of  germanium ", "Which period does  germanium  belongs to", "period of  germanium ", "what is the use of  germanium ", "use of  germanium ", "application of  germanium ", "what are the applications of  germanium ", "what is the atomic weight of  germanium ", "atomic weight of  germanium ", "give brief account of  germanium ", "describe  germanium ", "what is the mass number of the  germanium ", "mass number of the  germanium "],
+         "responses": ["Atomic Number: 31 \n\nName: Gallium \n\nSymbol: Ga \n\nGroup in periodic table: 13 \n\nAtomic Weight:69.723 \n\nElectronic Configuration: [Ar] 3d10 4s2 4p1 \n\nUses: medical thermometers"],
+         "context_set": ""
+        },
+{"tag": "Arsenic",
+         "patterns": ["what is the symbol of  arsenic ", "how is  arsenic  represented", "how is  arsenic  represented in symbol", "symbol of  arsenic ", "what is the atomic number of  arsenic ", "atomic number of  arsenic ", "what is the electronic configuration of  arsenic ", "electronic configuration of  arsenic ", "Which group does  arsenic  belongs to", "group of  arsenic ", "Which period does  arsenic  belongs to", "period of  arsenic ", "what is the use of  arsenic ", "use of  arsenic ", "application of  arsenic ", "what are the applications of  arsenic ", "what is the atomic weight of  arsenic ", "atomic weight of  arsenic ", "give brief account of  arsenic ", "describe  arsenic ", "what is the mass number of the  arsenic ", "mass number of the  arsenic "],
+         "responses": ["Atomic Number: 31 \n\nName: Gallium \n\nSymbol: Ga \n\nGroup in periodic table: 13 \n\nAtomic Weight:69.723 \n\nElectronic Configuration: [Ar] 3d10 4s2 4p1 \n\nUses: medical thermometers"],
+         "context_set": ""
+        },
+{"tag": "Selenium",
+         "patterns": ["what is the symbol of  selenium ", "how is  selenium  represented", "how is  selenium  represented in symbol", "symbol of  selenium ", "what is the atomic number of  selenium ", "atomic number of  selenium ", "what is the electronic configuration of  selenium ", "electronic configuration of  selenium ", "Which group does  selenium  belongs to", "group of  selenium ", "Which period does  selenium  belongs to", "period of  selenium ", "what is the use of  selenium ", "use of  selenium ", "application of  selenium ", "what are the applications of  selenium ", "what is the atomic weight of  selenium ", "atomic weight of  selenium ", "give brief account of  selenium ", "describe  selenium ", "what is the mass number of the  selenium ", "mass number of the  selenium "],
+         "responses": ["Atomic Number: 31 \n\nName: Gallium \n\nSymbol: Ga \n\nGroup in periodic table: 13 \n\nAtomic Weight:69.723 \n\nElectronic Configuration: [Ar] 3d10 4s2 4p1 \n\nUses: medical thermometer"],
+         "context_set": ""
+        },
+{"tag": "Bromine",
+         "patterns": ["what is the symbol of  bromine ", "how is  bromine  represented", "how is  bromine  represented in symbol", "symbol of  bromine ", "what is the atomic number of  bromine ", "atomic number of  bromine ", "what is the electronic configuration of  bromine ", "electronic configuration of  bromine ", "Which group does  bromine  belongs to", "group of  bromine ", "Which period does  bromine  belongs to", "period of  bromine ", "what is the use of  bromine ", "use of  bromine ", "application of  bromine ", "what are the applications of  bromine ", "what is the atomic weight of  bromine ", "atomic weight of  bromine ", "give brief account of  bromine ", "describe  bromine ", "what is the mass number of the  bromine ", "mass number of the  bromine "],
+         "responses": ["Atomic Number: 31 \n\nName: Gallium \n\nSymbol: Ga \n\nGroup in periodic table: 13 \n\nAtomic Weight:69.723 \n\nElectronic Configuration: [Ar] 3d10 4s2 4p1 \n\nUses: medical thermometers"],
+         "context_set": ""
+        },
+{"tag": "Krypton",
+         "patterns": ["what is the symbol of  krypton ", "how is  krypton  represented", "how is  krypton  represented in symbol", "symbol of  krypton ", "what is the atomic number of  krypton ", "atomic number of  krypton ", "what is the electronic configuration of  krypton ", "electronic configuration of  krypton ", "Which group does  krypton  belongs to", "group of  krypton ", "Which period does  krypton  belongs to", "period of  krypton ", "what is the use of  krypton ", "use of  krypton ", "application of  krypton ", "what are the applications of  krypton ", "what is the atomic weight of  krypton ", "atomic weight of  krypton ", "give brief account of  krypton ", "describe  krypton ", "what is the mass number of the  krypton ", "mass number of the  krypton "],
+         "responses": ["Atomic Number: 36 \n\nName: Krypton \n\nSymbol: Kr \n\nGroup in periodic table: 18 \n\nAtomic Weight:83.8 \n\nElectronic Configuration: [Ar] 3d10 4s2 4p6 \n\nUses: high-speed photography"],
+         "context_set": ""
+        },
+{"tag": "Rubidium",
+         "patterns": ["what is the symbol of  rubidium ", "how is  rubidium  represented", "how is  rubidium  represented in symbol", "symbol of  rubidium ", "what is the atomic number of  rubidium ", "atomic number of  rubidium ", "what is the electronic configuration of  rubidium ", "electronic configuration of  rubidium ", "Which group does  rubidium  belongs to", "group of  rubidium ", "Which period does  rubidium  belongs to", "period of  rubidium ", "what is the use of  rubidium ", "use of  rubidium ", "application of  rubidium ", "what are the applications of  rubidium ", "what is the atomic weight of  rubidium ", "atomic weight of  rubidium ", "give brief account of  rubidium ", "describe  rubidium ", "what is the mass number of the  rubidium ", "mass number of the  rubidium "],
+         "responses": ["Atomic Number: 37 \n\nName: Rubidium \n\nSymbol: Rb \n\nGroup in periodic table: 1 \n\nAtomic Weight:85.468 \n\nElectronic Configuration: [Kr] 5s1 \n\nUses: vacuum tubes"],
+         "context_set": ""
+        },
+{"tag": "Strontium",
+         "patterns": ["what is the symbol of  strontium ", "how is  strontium  represented", "how is  strontium  represented in symbol", "symbol of  strontium ", "what is the atomic number of  strontium ", "atomic number of  strontium ", "what is the electronic configuration of  strontium ", "electronic configuration of  strontium ", "Which group does  strontium  belongs to", "group of  strontium ", "Which period does  strontium  belongs to", "period of  strontium ", "what is the use of  strontium ", "use of  strontium ", "application of  strontium ", "what are the applications of  strontium ", "what is the atomic weight of  strontium ", "atomic weight of  strontium ", "give brief account of  strontium ", "describe  strontium ", "what is the mass number of the  strontium ", "mass number of the  strontium "],
+         "responses": ["Atomic Number: 38 \n\nName: Strontium \n\nSymbol: Sr \n\nGroup in periodic table: 2 \n\nAtomic Weight:87.62 \n\nElectronic Configuration: [Kr] 5s2 \n\nUses: zinc refining"],
+         "context_set": ""
+        },
+{"tag": "Yttrium",
+         "patterns": ["what is the symbol of  yttrium ", "how is  yttrium  represented", "how is  yttrium  represented in symbol", "symbol of  yttrium ", "what is the atomic number of  yttrium ", "atomic number of  yttrium ", "what is the electronic configuration of  yttrium ", "electronic configuration of  yttrium ", "Which group does  yttrium  belongs to", "group of  yttrium ", "Which period does  yttrium  belongs to", "period of  yttrium ", "what is the use of  yttrium ", "use of  yttrium ", "application of  yttrium ", "what are the applications of  yttrium ", "what is the atomic weight of  yttrium ", "atomic weight of  yttrium ", "give brief account of  yttrium ", "describe  yttrium ", "what is the mass number of the  yttrium ", "mass number of the  yttrium "],
+         "responses": ["Atomic Number: 39 \n\nName: Yttrium \n\nSymbol: Y \n\nGroup in periodic table: 3 \n\nAtomic Weight:88.906 \n\nElectronic Configuration: [Kr] 4d1 5s2 \n\nUses: television tubes"],
+         "context_set": ""
+        },
+{"tag": "Zirconium",
+         "patterns": ["what is the symbol of  zirconium ", "how is  zirconium  represented", "how is  zirconium  represented in symbol", "symbol of  zirconium ", "what is the atomic number of  zirconium ", "atomic number of  zirconium ", "what is the electronic configuration of  zirconium ", "electronic configuration of  zirconium ", "Which group does  zirconium  belongs to", "group of  zirconium ", "Which period does  zirconium  belongs to", "period of  zirconium ", "what is the use of  zirconium ", "use of  zirconium ", "application of  zirconium ", "what are the applications of  zirconium ", "what is the atomic weight of  zirconium ", "atomic weight of  zirconium ", "give brief account of  zirconium ", "describe  zirconium ", "what is the mass number of the  zirconium ", "mass number of the  zirconium "],
+         "responses": ["Atomic Number: 40 \n\nName: Zirconium \n\nSymbol: Zr \n\nGroup in periodic table: 4 \n\nAtomic Weight:91.224 \n\nElectronic Configuration: [Kr] 4d2 5s2 \n\nUses: nuclear reactors"],
+         "context_set": ""
+        },
+{"tag": "Niobium",
+         "patterns": ["what is the symbol of  niobium ", "how is  niobium  represented", "how is  niobium  represented in symbol", "symbol of  niobium ", "what is the atomic number of  niobium ", "atomic number of  niobium ", "what is the electronic configuration of  niobium ", "electronic configuration of  niobium ", "Which group does  niobium  belongs to", "group of  niobium ", "Which period does  niobium  belongs to", "period of  niobium ", "what is the use of  niobium ", "use of  niobium ", "application of  niobium ", "what are the applications of  niobium ", "what is the atomic weight of  niobium ", "atomic weight of  niobium ", "give brief account of  niobium ", "describe  niobium ", "what is the mass number of the  niobium ", "mass number of the  niobium "],
+         "responses": ["Atomic Number: 41 \n\nName: Niobium \n\nSymbol: Nb \n\nGroup in periodic table: 5 \n\nAtomic Weight:92.906 \n\nElectronic Configuration: [Kr] 4d4 5s1 \n\nUses: pipelines"],
+         "context_set": ""
+        },
+{"tag": "Molybdenum",
+         "patterns": ["what is the symbol of  molybdenum ", "how is  molybdenum  represented", "how is  molybdenum  represented in symbol", "symbol of  molybdenum ", "what is the atomic number of  molybdenum ", "atomic number of  molybdenum ", "what is the electronic configuration of  molybdenum ", "electronic configuration of  molybdenum ", "Which group does  molybdenum  belongs to", "group of  molybdenum ", "Which period does  molybdenum  belongs to", "period of  molybdenum ", "what is the use of  molybdenum ", "use of  molybdenum ", "application of  molybdenum ", "what are the applications of  molybdenum ", "what is the atomic weight of  molybdenum ", "atomic weight of  molybdenum ", "give brief account of  molybdenum ", "describe  molybdenum ", "what is the mass number of the  molybdenum ", "mass number of the  molybdenum "],
+         "responses": ["Atomic Number: 42 \n\nName: Molybdenum \n\nSymbol: Mo \n\nGroup in periodic table: 6 \n\nAtomicWeight: 95.94 \n\nElectronic Configuration: [Kr] 4d5 5s1 \n\nUses: refine petroleum"],
+         "context_set": ""
+        },
+{"tag": "Technetium",
+         "patterns": ["what is the symbol of  technetium ", "how is  technetium  represented", "how is  technetium  represented in symbol", "symbol of  technetium ", "what is the atomic number of  technetium ", "atomic number of  technetium ", "what is the electronic configuration of  technetium ", "electronic configuration of  technetium ", "Which group does  technetium  belongs to", "group of  technetium ", "Which period does  technetium  belongs to", "period of  technetium ", "what is the use of  technetium ", "use of  technetium ", "application of  technetium ", "what are the applications of  technetium ", "what is the atomic weight of  technetium ", "atomic weight of  technetium ", "give brief account of  technetium ", "describe  technetium ", "what is the mass number of the  technetium ", "mass number of the  technetium "],
+         "responses": ["Atomic Number: 43 \n\nName: Technetium \n\nSymbol: Tc \n\nGroup in periodic table: 7 \n\nAtomicWeight: 98 \n\nElectronic Configuration: [Kr] 4d5 5s2 \n\nUses: radioactive tracer"],
+         "context_set": ""
+        },
+{"tag": "Ruthenium",
+         "patterns": ["what is the symbol of  ruthenium ", "how is  ruthenium  represented", "how is  ruthenium  represented in symbol", "symbol of  ruthenium ", "what is the atomic number of  ruthenium ", "atomic number of  ruthenium ", "what is the electronic configuration of  ruthenium ", "electronic configuration of  ruthenium ", "Which group does  ruthenium  belongs to", "group of  ruthenium ", "Which period does  ruthenium  belongs to", "period of  ruthenium ", "what is the use of  ruthenium ", "use of  ruthenium ", "application of  ruthenium ", "what are the applications of  ruthenium ", "what is the atomic weight of  ruthenium ", "atomic weight of  ruthenium ", "give brief account of  ruthenium ", "describe  ruthenium ", "what is the mass number of the  ruthenium ", "mass number of the  ruthenium "],
+         "responses": ["Atomic Number: 44 \n\nName: Ruthenium \n\nSymbol: Ru \n\nGroup in periodic table: 8 \n\nAtomic Weight:101.07 \n\nElectronic Configuration: [Kr] 4d7 5s1 \n\nUses: colour glasses"],
+         "context_set": ""
+        },
+{"tag": "Rhodium",
+         "patterns": ["what is the symbol of  rhodium ", "how is  rhodium  represented", "how is  rhodium  represented in symbol", "symbol of  rhodium ", "what is the atomic number of  rhodium ", "atomic number of  rhodium ", "what is the electronic configuration of  rhodium ", "electronic configuration of  rhodium ", "Which group does  rhodium  belongs to", "group of  rhodium ", "Which period does  rhodium  belongs to", "period of  rhodium ", "what is the use of  rhodium ", "use of  rhodium ", "application of  rhodium ", "what are the applications of  rhodium ", "what is the atomic weight of  rhodium ", "atomic weight of  rhodium ", "give brief account of  rhodium ", "describe  rhodium ", "what is the mass number of the  rhodium ", "mass number of the  rhodium "],
+         "responses": ["Atomic Number: 45 \n\nName: Rhodium \n\nSymbol: Rh \n\nGroup in periodic table: 9 \n\nAtomic Weight:102.906 \n\nElectronic Configuration: [Kr] 4d8 5s1 \n\nUses: electrical contacts"],
+         "context_set": ""
+        },
+{"tag": "Palladium",
+         "patterns": ["what is the symbol of  palladium ", "how is  palladium  represented", "how is  palladium  represented in symbol", "symbol of  palladium ", "what is the atomic number of  palladium ", "atomic number of  palladium ", "what is the electronic configuration of  palladium ", "electronic configuration of  palladium ", "Which group does  palladium  belongs to", "group of  palladium ", "Which period does  palladium  belongs to", "period of  palladium ", "what is the use of  palladium ", "use of  palladium ", "application of  palladium ", "what are the applications of  palladium ", "what is the atomic weight of  palladium ", "atomic weight of  palladium ", "give brief account of  palladium ", "describe  palladium ", "what is the mass number of the  palladium ", "mass number of the  palladium "],
+         "responses": ["Atomic Number: 46 \n\nName: Palladium \n\nSymbol: Pd \n\nGroup in periodic table: 10 \n\nAtomic Weight:106.42 \n\nElectronic Configuration: [Kr] 4d10 \n\nUses: catalytic conversion"],
+         "context_set": ""
+        },
+{"tag": "Silver",
+         "patterns": ["what is the symbol of  silver ", "how is  silver  represented", "how is  silver  represented in symbol", "symbol of  silver ", "what is the atomic number of  silver ", "atomic number of  silver ", "what is the electronic configuration of  silver ", "electronic configuration of  silver ", "Which group does  silver  belongs to", "group of  silver ", "Which period does  silver  belongs to", "period of  silver ", "what is the use of  silver ", "use of  silver ", "application of  silver ", "what are the applications of  silver ", "what is the atomic weight of  silver ", "atomic weight of  silver ", "give brief account of  silver ", "describe  silver ", "what is the mass number of the  silver ", "mass number of the  silver "],
+         "responses": ["Atomic Number: 47 \n\nName: Silver \n\nSymbol: Ag \n\nGroup in periodic table: 11 \n\nAtomic Weight:107.868 \n\nElectronic Configuration: [Kr] 4d10 5s1 \n\nUses: tableware"],
+         "context_set": ""
+        },
+{"tag": "Cadmium",
+         "patterns": ["what is the symbol of  cadmium ", "how is  cadmium  represented", "how is  cadmium  represented in symbol", "symbol of  cadmium ", "what is the atomic number of  cadmium ", "atomic number of  cadmium ", "what is the electronic configuration of  cadmium ", "electronic configuration of  cadmium ", "Which group does  cadmium  belongs to", "group of  cadmium ", "Which period does  cadmium  belongs to", "period of  cadmium ", "what is the use of  cadmium ", "use of  cadmium ", "application of  cadmium ", "what are the applications of  cadmium ", "what is the atomic weight of  cadmium ", "atomic weight of  cadmium ", "give brief account of  cadmium ", "describe  cadmium ", "what is the mass number of the  cadmium ", "mass number of the  cadmium "],
+         "responses": ["Atomic Number: 48 \n\nName: Cadmium \n\nSymbol: Cd \n\nGroup in periodic table: 12 \n\nAtomic Weight:112.411 \n\nElectronic Configuration: [Kr] 4d10 5s2 \n\nUses: absorb neutrons"],
+         "context_set": ""
+        },
+{"tag": "Indium",
+         "patterns": ["what is the symbol of  indium ", "how is  indium  represented", "how is  indium  represented in symbol", "symbol of  indium ", "what is the atomic number of  indium ", "atomic number of  indium ", "what is the electronic configuration of  indium ", "electronic configuration of  indium ", "Which group does  indium  belongs to", "group of  indium ", "Which period does  indium  belongs to", "period of  indium ", "what is the use of  indium ", "use of  indium ", "application of  indium ", "what are the applications of  indium ", "what is the atomic weight of  indium ", "atomic weight of  indium ", "give brief account of  indium ", "describe  indium ", "what is the mass number of the  indium ", "mass number of the  indium "],
+         "responses":[" Atomic Number: 49 \n\nName: Indium \n\nSymbol: In \n\nGroup in periodic table: 13 \n\nAtomic Weight:114.818 \n\nElectronic Configuration: [Kr] 4d10 5s2 5p1 \n\nUses: doping agent"],
+         "context_set": ""
+        },
+{"tag": "Tin",
+         "patterns": ["what is the symbol of  tin ", "how is  tin  represented", "how is  tin  represented in symbol", "symbol of  tin ", "what is the atomic number of  tin ", "atomic number of  tin ", "what is the electronic configuration of  tin ", "electronic configuration of  tin ", "Which group does  tin  belongs to", "group of  tin ", "Which period does  tin  belongs to", "period of  tin ", "what is the use of  tin ", "use of  tin ", "application of  tin ", "what are the applications of  tin ", "what is the atomic weight of  tin ", "atomic weight of  tin ", "give brief account of  tin ", "describe  tin ", "what is the mass number of the  tin ", "mass number of the  tin "],
+         "responses": ["Atomic Number: 50 \n\nName: Tin \n\nSymbol: Sn \n\nGroup in periodic table: 14 \n\nAtomic Weight:118.71 \n\nElectronic Configuration: [Kr] 4d10 5s2 5p2 \n\nUses: coat metals"],
+         "context_set": ""
+        },
+{"tag": "Antimony",
+         "patterns": ["what is the symbol of  antimony ", "how is  antimony  represented", "how is  antimony  represented in symbol", "symbol of  antimony ", "what is the atomic number of  antimony ", "atomic number of  antimony ", "what is the electronic configuration of  antimony ", "electronic configuration of  antimony ", "Which group does  antimony  belongs to", "group of  antimony ", "Which period does  antimony  belongs to", "period of  antimony ", "what is the use of  antimony ", "use of  antimony ", "application of  antimony ", "what are the applications of  antimony ", "what is the atomic weight of  antimony ", "atomic weight of  antimony ", "give brief account of  antimony ", "describe  antimony ", "what is the mass number of the  antimony ", "mass number of the  antimony"],
+         "responses": ["Atomic Number: 51 \n\nName: Antimony \n\nSymbol: Sb \n\nGroup in periodic table: 15 \n\nAtomic Weight: 121.76 \n\nElectronic Configuration: [Kr] 4d10 5s2 5p3 \n\nUses:  cable sheathing "],
+         "context_set": ""
+        },
+{"tag": "Tellurium",
+         "patterns": ["what is the symbol of  tellurium ", "how is  tellurium  represented", "how is  tellurium  represented in symbol", "symbol of  tellurium ", "what is the atomic number of  tellurium ", "atomic number of  tellurium ", "what is the electronic configuration of  tellurium ", "electronic configuration of  tellurium ", "Which group does  tellurium  belongs to", "group of  tellurium ", "Which period does  tellurium  belongs to", "period of  tellurium ", "what is the use of  tellurium ", "use of  tellurium ", "application of  tellurium ", "what are the applications of  tellurium ", "what is the atomic weight of  tellurium ", "atomic weight of  tellurium ", "give brief account of  tellurium ", "describe  tellurium ", "what is the mass number of the  tellurium ", "mass number of the  tellurium "],
+         "responses": ["Atomic Number: 52 \n\nName: Tellurium \n\nSymbol: Te \n\nGroup in periodic table: 16 \n\nAtomic Weight: 127.6 \n\nElectronic Configuration: [Kr] 4d10 5s2 5p4 \n\nUses:  component of cast iron "],
+         "context_set": ""
+        },
+{"tag": "Iodine",
+         "patterns": ["what is the symbol of  iodine ", "how is  iodine  represented", "how is  iodine  represented in symbol", "symbol of  iodine ", "what is the atomic number of  iodine ", "atomic number of  iodine ", "what is the electronic configuration of  iodine ", "electronic configuration of  iodine ", "Which group does  iodine  belongs to", "group of  iodine ", "Which period does  iodine  belongs to", "period of  iodine ", "what is the use of  iodine ", "use of  iodine ", "application of  iodine ", "what are the applications of  iodine ", "what is the atomic weight of  iodine ", "atomic weight of  iodine ", "give brief account of  iodine ", "describe  iodine ", "what is the mass number of the  iodine ", "mass number of the  iodine"],
+         "responses": ["Atomic Number: 53 \n\nName: Iodine \n\nSymbol: I \n\nGroup in periodic table: 17 \n\nAtomic Weight: 126.905 \n\nElectronic Configuration: [Kr] 4d10 5s2 5p5 \n\nUses:  thyroid cancer "],
+         "context_set": ""
+        },
+{"tag": "Xenon",
+         "patterns": ["what is the symbol of  xenon ", "how is  xenon  represented", "how is  xenon  represented in symbol", "symbol of  xenon ", "what is the atomic number of  xenon ", "atomic number of  xenon ", "what is the electronic configuration of  xenon ", "electronic configuration of  xenon ", "Which group does  xenon  belongs to", "group of  xenon ", "Which period does  xenon  belongs to", "period of  xenon ", "what is the use of  xenon ", "use of  xenon ", "application of  xenon ", "what are the applications of  xenon ", "what is the atomic weight of  xenon ", "atomic weight of  xenon ", "give brief account of  xenon ", "describe  xenon ", "what is the mass number of the  xenon ", "mass number of the  xenon"],
+         "responses": ["Atomic Number: 54 \n\nName: Xenon \n\nSymbol: Xe \n\nGroup in periodic table: 18 \n\nAtomic Weight: 131.293 \n\nElectronic Configuration: [Kr] 4d10 5s2 5p6 \n\nUses:  arc lamps "],
+         "context_set": ""
+        },
+{"tag": "Cesium",
+         "patterns": ["what is the symbol of  cesium ", "how is  cesium  represented", "how is  cesium  represented in symbol", "symbol of  cesium ", "what is the atomic number of  cesium ", "atomic number of  cesium ", "what is the electronic configuration of  cesium ", "electronic configuration of  cesium ", "Which group does  cesium  belongs to", "group of  cesium ", "Which period does  cesium  belongs to", "period of  cesium ", "what is the use of  cesium ", "use of  cesium ", "application of  cesium ", "what are the applications of  cesium ", "what is the atomic weight of  cesium ", "atomic weight of  cesium ", "give brief account of  cesium ", "describe  cesium ", "what is the mass number of the  cesium ", "mass number of the  cesium "],
+         "responses": ["Atomic Number: 55 \n\nName: Cesium \n\nSymbol: Cs \n\nGroup in periodic table: 1 \n\nAtomic Weight: 132.906 \n\nElectronic Configuration: [Xe] 6s1 \n\nUses:  catalyst "],
+         "context_set": ""
+        },
+{"tag": "Barium",
+         "patterns": ["what is the symbol of  barium ", "how is  barium  represented", "how is  barium  represented in symbol", "symbol of  barium ", "what is the atomic number of  barium ", "atomic number of  barium ", "what is the electronic configuration of  barium ", "electronic configuration of  barium ", "Which group does  barium  belongs to", "group of  barium ", "Which period does  barium  belongs to", "period of  barium ", "what is the use of  barium ", "use of  barium ", "application of  barium ", "what are the applications of  barium ", "what is the atomic weight of  barium ", "atomic weight of  barium ", "give brief account of  barium ", "describe  barium ", "what is the mass number of the  barium ", "mass number of the  barium "],
+         "responses": ["Atomic Number: 56 \n\nName: Barium \n\nSymbol: Ba \n\nGroup in periodic table: 2 \n\nAtomic Weight: 137.327 \n\nElectronic Configuration: [Xe] 6s2 \n\nUses:  contraction medium "],
+         "context_set": ""
+        },
+{"tag": "Lanthanum",
+         "patterns": ["what is the symbol of  lanthanum ", "how is  lanthanum  represented", "how is  lanthanum  represented in symbol", "symbol of  lanthanum ", "what is the atomic number of  lanthanum ", "atomic number of  lanthanum ", "what is the electronic configuration of  lanthanum ", "electronic configuration of  lanthanum ", "Which group does  lanthanum  belongs to", "group of  lanthanum ", "Which period does  lanthanum  belongs to", "period of  lanthanum ", "what is the use of  lanthanum ", "use of  lanthanum ", "application of  lanthanum ", "what are the applications of  lanthanum ", "what is the atomic weight of  lanthanum ", "atomic weight of  lanthanum ", "give brief account of  lanthanum ", "describe  lanthanum ", "what is the mass number of the  lanthanum ", "mass number of the  lanthanum "],
+         "responses": ["Atomic Number: 57 \n\nName: Lanthanum \n\nSymbol: La \n\nGroup in periodic table: 3 \n\nAtomic Weight: 138.906 \n\nElectronic Configuration: [Xe] 5d1 6s2 \n\nUses:  store hydrogen gas"],
+         "context_set": ""
+        },
+{"tag": "Cerium",
+         "patterns": ["what is the symbol of  cerium ", "how is  cerium  represented", "how is  cerium  represented in symbol", "symbol of  cerium ", "what is the atomic number of  cerium ", "atomic number of  cerium ", "what is the electronic configuration of  cerium ", "electronic configuration of  cerium ", "Which group does  cerium  belongs to", "group of  cerium ", "Which period does  cerium  belongs to", "period of  cerium ", "what is the use of  cerium ", "use of  cerium ", "application of  cerium ", "what are the applications of  cerium ", "what is the atomic weight of  cerium ", "atomic weight of  cerium ", "give brief account of  cerium ", "describe  cerium ", "what is the mass number of the  cerium ", "mass number of the  cerium "],
+         "responses": ["Atomic Number: 58 \n\nName: Cerium \n\nSymbol: Ce \n\nGroup in periodic table: 101 \n\nAtomic Weight: 140.116 \n\nElectronic Configuration: [Xe] 4f1 5d1 6s2 \n\nUses:  refine oil "],
+         "context_set": ""
+        },
+{"tag": "Praseodymium",
+         "patterns": ["what is the symbol of  praseodymium ", "how is  praseodymium  represented", "how is  praseodymium  represented in symbol", "symbol of  praseodymium ", "what is the atomic number of  praseodymium ", "atomic number of  praseodymium ", "what is the electronic configuration of  praseodymium ", "electronic configuration of  praseodymium ", "Which group does  praseodymium  belongs to", "group of  praseodymium ", "Which period does  praseodymium  belongs to", "period of  praseodymium ", "what is the use of  praseodymium ", "use of  praseodymium ", "application of  praseodymium ", "what are the applications of  praseodymium ", "what is the atomic weight of  praseodymium ", "atomic weight of  praseodymium ", "give brief account of  praseodymium ", "describe  praseodymium ", "what is the mass number of the  praseodymium ", "mass number of the  praseodymium"],
+         "responses": ["Atomic Number: 59 \n\nName: Praseodymium \n\nSymbol: Pr \n\nGroup in periodic table: 101 \n\nAtomic Weight: 140.908 \n\nElectronic Configuration: [Xe] 4f3 6s2 \n\nUses:  flint lighter products"],
+         "context_set": ""
+        },
+{"tag": "Neodymium",
+         "patterns": ["what is the symbol of  neodymium ", "how is  neodymium  represented", "how is  neodymium  represented in symbol", "symbol of  neodymium ", "what is the atomic number of  neodymium ", "atomic number of  neodymium ", "what is the electronic configuration of  neodymium ", "electronic configuration of  neodymium ", "Which group does  neodymium  belongs to", "group of  neodymium ", "Which period does  neodymium  belongs to", "period of  neodymium ", "what is the use of  neodymium ", "use of  neodymium ", "application of  neodymium ", "what are the applications of  neodymium ", "what is the atomic weight of  neodymium ", "atomic weight of  neodymium ", "give brief account of  neodymium ", "describe  neodymium ", "what is the mass number of the  neodymium ", "mass number of the  neodymium"],
+         "responses": ["Atomic Number: 60 \n\nName: Neodymium \n\nSymbol: Nd \n\nGroup in periodic table: 101 \n\nAtomic Weight: 144.24 \n\nElectronic Configuration: [Xe] 4f4 6s2 \n\nUses:  polymerization reaction "],
+         "context_set": ""
+        },
+{"tag": "Promethium",
+         "patterns": ["what is the symbol of  promethium ", "how is  promethium  represented", "how is  promethium  represented in symbol", "symbol of  promethium ", "what is the atomic number of  promethium ", "atomic number of  promethium ", "what is the electronic configuration of  promethium ", "electronic configuration of  promethium ", "Which group does  promethium  belongs to", "group of  promethium ", "Which period does  promethium  belongs to", "period of  promethium ", "what is the use of  promethium ", "use of  promethium ", "application of  promethium ", "what are the applications of  promethium ", "what is the atomic weight of  promethium ", "atomic weight of  promethium ", "give brief account of  promethium ", "describe  promethium ", "what is the mass number of the  promethium ", "mass number of the  promethium "],
+         "responses": ["Atomic Number: 61 \n\nName: Promethium \n\nSymbol: Pm \n\nGroup in periodic table: 101 \n\nAtomic Weight: 145 \n\nElectronic Configuration: [Xe] 4f5 6s2 \n\nUses:  x-ray machines "],
+         "context_set": ""
+        },
+{"tag": "Samarium",
+         "patterns": ["what is the symbol of  samarium ", "how is  samarium  represented", "how is  samarium  represented in symbol", "symbol of  samarium ", "what is the atomic number of  samarium ", "atomic number of  samarium ", "what is the electronic configuration of  samarium ", "electronic configuration of  samarium ", "Which group does  samarium  belongs to", "group of  samarium ", "Which period does  samarium  belongs to", "period of  samarium ", "what is the use of  samarium ", "use of  samarium ", "application of  samarium ", "what are the applications of  samarium ", "what is the atomic weight of  samarium ", "atomic weight of  samarium ", "give brief account of  samarium ", "describe  samarium ", "what is the mass number of the  samarium ", "mass number of the  samarium"],
+         "responses": ["Atomic Number: 62 \n\nName: Samarium \n\nSymbol: Sm \n\nGroup in periodic table: 101 \n\nAtomic Weight: 150.36 \n\nElectronic Configuration: [Xe] 4f6 6s2 \n\nUses:  absorb infrared light rays"],
+         "context_set": ""
+        },
+{"tag": "Europium",
+         "patterns": ["what is the symbol of  europium ", "how is  europium  represented", "how is  europium  represented in symbol", "symbol of  europium ", "what is the atomic number of  europium ", "atomic number of  europium ", "what is the electronic configuration of  europium ", "electronic configuration of  europium ", "Which group does  europium  belongs to", "group of  europium ", "Which period does  europium  belongs to", "period of  europium ", "what is the use of  europium ", "use of  europium ", "application of  europium ", "what are the applications of  europium ", "what is the atomic weight of  europium ", "atomic weight of  europium ", "give brief account of  europium ", "describe  europium ", "what is the mass number of the  europium ", "mass number of the  europium "],
+         "responses": ["Atomic Number: 63 \n\nName: Europium \n\nSymbol: Eu \n\nGroup in periodic table: 101 \n\nAtomic Weight: 151.964 \n\nElectronic Configuration: [Xe] 4f7 6s2 \n\nUses:  neutron absorber "],
+         "context_set": ""
+        },
+{"tag": "Gadolinium",
+         "patterns": ["what is the symbol of  gadolinium ", "how is  gadolinium  represented", "how is  gadolinium  represented in symbol", "symbol of  gadolinium ", "what is the atomic number of  gadolinium ", "atomic number of  gadolinium ", "what is the electronic configuration of  gadolinium ", "electronic configuration of  gadolinium ", "Which group does  gadolinium  belongs to", "group of  gadolinium ", "Which period does  gadolinium  belongs to", "period of  gadolinium ", "what is the use of  gadolinium ", "use of  gadolinium ", "application of  gadolinium ", "what are the applications of  gadolinium ", "what is the atomic weight of  gadolinium ", "atomic weight of  gadolinium ", "give brief account of  gadolinium ", "describe  gadolinium ", "what is the mass number of the  gadolinium ", "mass number of the  gadolinium"],
+         "responses": ["Atomic Number: 64 \n\nName: Gadolinium \n\nSymbol: Gd \n\nGroup in periodic table: 101 \n\nAtomic Weight: 157.25 \n\nElectronic Configuration: [Xe] 4f7 5d1 6s2 \n\nUses:  microwaves "],
+         "context_set": ""
+        },
+{"tag": "Terbium",
+         "patterns": ["what is the symbol of  terbium ", "how is  terbium  represented", "how is  terbium  represented in symbol", "symbol of  terbium ", "what is the atomic number of  terbium ", "atomic number of  terbium ", "what is the electronic configuration of  terbium ", "electronic configuration of  terbium ", "Which group does  terbium  belongs to", "group of  terbium ", "Which period does  terbium  belongs to", "period of  terbium ", "what is the use of  terbium ", "use of  terbium ", "application of  terbium ", "what are the applications of  terbium ", "what is the atomic weight of  terbium ", "atomic weight of  terbium ", "give brief account of  terbium ", "describe  terbium ", "what is the mass number of the  terbium ", "mass number of the  terbium "],
+         "responses": ["Atomic Number: 65 \n\nName: Terbium \n\nSymbol: Tb \n\nGroup in periodic table: 101 \n\nAtomic Weight: 158.925 \n\nElectronic Configuration: [Xe] 4f9 6s2 \n\nUses:  stabilizer"],
+         "context_set": ""
+        },
+{"tag": "Dysprosium",
+         "patterns": ["what is the symbol of  dysprosium ", "how is  dysprosium  represented", "how is  dysprosium  represented in symbol", "symbol of  dysprosium ", "what is the atomic number of  dysprosium ", "atomic number of  dysprosium ", "what is the electronic configuration of  dysprosium ", "electronic configuration of  dysprosium ", "Which group does  dysprosium  belongs to", "group of  dysprosium ", "Which period does  dysprosium  belongs to", "period of  dysprosium ", "what is the use of  dysprosium ", "use of  dysprosium ", "application of  dysprosium ", "what are the applications of  dysprosium ", "what is the atomic weight of  dysprosium ", "atomic weight of  dysprosium ", "give brief account of  dysprosium ", "describe  dysprosium ", "what is the mass number of the  dysprosium ", "mass number of the  dysprosium "],
+         "responses": ["Atomic Number: 66 \n\nName: Dysprosium \n\nSymbol: Dy \n\nGroup in periodic table: 101 \n\nAtomic Weight: 162.5 \n\nElectronic Configuration: [Xe] 4f10 6s2 \n\nUses:  laser materials "],
+         "context_set": ""
+        },
+{"tag": "Holmium",
+         "patterns": ["what is the symbol of  holmium ", "how is  holmium  represented", "how is  holmium  represented in symbol", "symbol of  holmium ", "what is the atomic number of  holmium ", "atomic number of  holmium ", "what is the electronic configuration of  holmium ", "electronic configuration of  holmium ", "Which group does  holmium  belongs to", "group of  holmium ", "Which period does  holmium  belongs to", "period of  holmium ", "what is the use of  holmium ", "use of  holmium ", "application of  holmium ", "what are the applications of  holmium ", "what is the atomic weight of  holmium ", "atomic weight of  holmium ", "give brief account of  holmium ", "describe  holmium ", "what is the mass number of the  holmium ", "mass number of the  holmium "],
+         "responses": ["Atomic Number: 67 \n\nName: Holmium \n\nSymbol: Ho \n\nGroup in periodic table: 101 \n\nAtomic Weight: 164.93 \n\nElectronic Configuration: [Xe] 4f11 6s2 \n\nUses:   production of magnets "],
+         "context_set": ""
+        },
+{"tag": "Erbium",
+         "patterns": ["what is the symbol of  erbium ", "how is  erbium  represented", "how is  erbium  represented in symbol", "symbol of  erbium ", "what is the atomic number of  erbium ", "atomic number of  erbium ", "what is the electronic configuration of  erbium ", "electronic configuration of  erbium ", "Which group does  erbium  belongs to", "group of  erbium ", "Which period does  erbium  belongs to", "period of  erbium ", "what is the use of  erbium ", "use of  erbium ", "application of  erbium ", "what are the applications of  erbium ", "what is the atomic weight of  erbium ", "atomic weight of  erbium ", "give brief account of  erbium ", "describe  erbium ", "what is the mass number of the  erbium ", "mass number of the  erbium "],
+         "responses": ["Atomic Number: 68 \n\nName: Erbium \n\nSymbol: Er \n\nGroup in periodic table: 101 \n\nAtomic Weight: 167.259 \n\nElectronic Configuration: [Xe] 4f12 6s2 \n\nUses:  reduce hardness of metal "],
+         "context_set": ""
+        },
+{"tag": "Thulium",
+         "patterns": ["what is the symbol of  thulium ", "how is  thulium  represented", "how is  thulium  represented in symbol", "symbol of  thulium ", "what is the atomic number of  thulium ", "atomic number of  thulium ", "what is the electronic configuration of  thulium ", "electronic configuration of  thulium ", "Which group does  thulium  belongs to", "group of  thulium ", "Which period does  thulium  belongs to", "period of  thulium ", "what is the use of  thulium ", "use of  thulium ", "application of  thulium ", "what are the applications of  thulium ", "what is the atomic weight of  thulium ", "atomic weight of  thulium ", "give brief account of  thulium ", "describe  thulium ", "what is the mass number of the  thulium ", "mass number of the  thulium "],
+         "responses": ["Atomic Number: 69 \n\nName: Thulium \n\nSymbol: Tm \n\nGroup in periodic table: 101 \n\nAtomic Weight: 168.934 \n\nElectronic Configuration: [Xe] 4f13 6s2 \n\nUses:  light weight machines "],
+         "context_set": ""
+        },
+{"tag": "Ytterbium",
+         "patterns": ["what is the symbol of  ytterbium ", "how is  ytterbium  represented", "how is  ytterbium  represented in symbol", "symbol of  ytterbium ", "what is the atomic number of  ytterbium ", "atomic number of  ytterbium ", "what is the electronic configuration of  ytterbium ", "electronic configuration of  ytterbium ", "Which group does  ytterbium  belongs to", "group of  ytterbium ", "Which period does  ytterbium  belongs to", "period of  ytterbium ", "what is the use of  ytterbium ", "use of  ytterbium ", "application of  ytterbium ", "what are the applications of  ytterbium ", "what is the atomic weight of  ytterbium ", "atomic weight of  ytterbium ", "give brief account of  ytterbium ", "describe  ytterbium ", "what is the mass number of the  ytterbium ", "mass number of the  ytterbium "],
+         "responses": ["Atomic Number: 70 \n\nName: Ytterbium \n\nSymbol: Yb \n\nGroup in periodic table: 101 \n\nAtomic Weight: 173.04 \n\nElectronic Configuration: [Xe] 4f14 6s2 \n\nUses:  industrial catalyst"],
+         "context_set": ""
+        },
+{"tag": "Lutetium",
+         "patterns": ["what is the symbol of  lutetium ", "how is  lutetium  represented", "how is  lutetium  represented in symbol", "symbol of  lutetium ", "what is the atomic number of  lutetium ", "atomic number of  lutetium ", "what is the electronic configuration of  lutetium ", "electronic configuration of  lutetium ", "Which group does  lutetium  belongs to", "group of  lutetium ", "Which period does  lutetium  belongs to", "period of  lutetium ", "what is the use of  lutetium ", "use of  lutetium ", "application of  lutetium ", "what are the applications of  lutetium ", "what is the atomic weight of  lutetium ", "atomic weight of  lutetium ", "give brief account of  lutetium ", "describe  lutetium ", "what is the mass number of the  lutetium ", "mass number of the  lutetium"],
+         "responses": ["Atomic Number: 71 \n\nName: Lutetium \n\nSymbol: Lu \n\nGroup in periodic table: 101 \n\nAtomic Weight: 174.967 \n\nElectronic Configuration: [Xe] 4f14 5d1 6s2 \n\nUses:  petroleum cracking "],
+         "context_set": ""
+        },
+{"tag": "Hafnium",
+         "patterns": ["what is the symbol of  hafnium ", "how is  hafnium  represented", "how is  hafnium  represented in symbol", "symbol of  hafnium ", "what is the atomic number of  hafnium ", "atomic number of  hafnium ", "what is the electronic configuration of  hafnium ", "electronic configuration of  hafnium ", "Which group does  hafnium  belongs to", "group of  hafnium ", "Which period does  hafnium  belongs to", "period of  hafnium ", "what is the use of  hafnium ", "use of  hafnium ", "application of  hafnium ", "what are the applications of  hafnium ", "what is the atomic weight of  hafnium ", "atomic weight of  hafnium ", "give brief account of  hafnium ", "describe  hafnium ", "what is the mass number of the  hafnium ", "mass number of the  hafnium"],
+         "responses": ["Atomic Number: 72 \n\nName: Hafnium \n\nSymbol: Hf \n\nGroup in periodic table: 4 \n\nAtomic Weight: 178.49 \n\nElectronic Configuration: [Xe] 4f14 5d2 6s2 \n\nUses:  plasma welding torches "],
+         "context_set": ""
+        },
+{"tag": "Tantalum",
+         "patterns": ["what is the symbol of  tantalum ", "how is  tantalum  represented", "how is  tantalum  represented in symbol", "symbol of  tantalum ", "what is the atomic number of  tantalum ", "atomic number of  tantalum ", "what is the electronic configuration of  tantalum ", "electronic configuration of  tantalum ", "Which group does  tantalum  belongs to", "group of  tantalum ", "Which period does  tantalum  belongs to", "period of  tantalum ", "what is the use of  tantalum ", "use of  tantalum ", "application of  tantalum ", "what are the applications of  tantalum ", "what is the atomic weight of  tantalum ", "atomic weight of  tantalum ", "give brief account of  tantalum ", "describe  tantalum ", "what is the mass number of the  tantalum ", "mass number of the  tantalum"],
+         "responses": ["Atomic Number: 73 \n\nName: Tantalum \n\nSymbol: Ta \n\nGroup in periodic table: 5 \n\nAtomic Weight: 180.948 \n\nElectronic Configuration: [Xe] 4f14 5d3 6s2 \n\nUses:  electronic industry "],
+         "context_set": ""
+        },
+{"tag": "Tungsten",
+         "patterns": ["what is the symbol of  tungsten ", "how is  tungsten  represented", "how is  tungsten  represented in symbol", "symbol of  tungsten ", "what is the atomic number of  tungsten ", "atomic number of  tungsten ", "what is the electronic configuration of  tungsten ", "electronic configuration of  tungsten ", "Which group does  tungsten  belongs to", "group of  tungsten ", "Which period does  tungsten  belongs to", "period of  tungsten ", "what is the use of  tungsten ", "use of  tungsten ", "application of  tungsten ", "what are the applications of  tungsten ", "what is the atomic weight of  tungsten ", "atomic weight of  tungsten ", "give brief account of  tungsten ", "describe  tungsten ", "what is the mass number of the  tungsten ", "mass number of the  tungsten"],
+         "responses": ["Atomic Number: 74 \n\nName: Tungsten \n\nSymbol: W \n\nGroup in periodic table: 6 \n\nAtomic Weight: 183.84 \n\nElectronic Configuration: [Xe] 4f14 5d4 6s2 \n\nUses:  incandescent bulbs "],
+         "context_set": ""
+        },
+{"tag": "Rhenium",
+         "patterns": ["what is the symbol of  rhenium ", "how is  rhenium  represented", "how is  rhenium  represented in symbol", "symbol of  rhenium ", "what is the atomic number of  rhenium ", "atomic number of  rhenium ", "what is the electronic configuration of  rhenium ", "electronic configuration of  rhenium ", "Which group does  rhenium  belongs to", "group of  rhenium ", "Which period does  rhenium  belongs to", "period of  rhenium ", "what is the use of  rhenium ", "use of  rhenium ", "application of  rhenium ", "what are the applications of  rhenium ", "what is the atomic weight of  rhenium ", "atomic weight of  rhenium ", "give brief account of  rhenium ", "describe  rhenium ", "what is the mass number of the  rhenium ", "mass number of the  rhenium"],
+         "responses": ["Atomic Number: 75 \n\nName: Rhenium \n\nSymbol: Re \n\nGroup in periodic table: 7 \n\nAtomic Weight: 186.207 \n\nElectronic Configuration: [Xe] 4f14 5d5 6s2 \n\nUses:  mass spectrographs "],
+         "context_set": ""
+        },
+{"tag": "Osmium",
+         "patterns": ["what is the symbol of  osmium ", "how is  osmium  represented", "how is  osmium  represented in symbol", "symbol of  osmium ", "what is the atomic number of  osmium ", "atomic number of  osmium ", "what is the electronic configuration of  osmium ", "electronic configuration of  osmium ", "Which group does  osmium  belongs to", "group of  osmium ", "Which period does  osmium  belongs to", "period of  osmium ", "what is the use of  osmium ", "use of  osmium ", "application of  osmium ", "what are the applications of  osmium ", "what is the atomic weight of  osmium ", "atomic weight of  osmium ", "give brief account of  osmium ", "describe  osmium ", "what is the mass number of the  osmium ", "mass number of the  osmium"],
+         "responses": ["Atomic Number: 76 \n\nName: Osmium \n\nSymbol: Os \n\nGroup in periodic table: 8 \n\nAtomic Weight: 190.23 \n\nElectronic Configuration: [Xe] 4f14 5d6 6s2 \n\nUses:  ball point pen tips "],
+         "context_set": ""
+        },
+{"tag": "Iridium",
+         "patterns": ["what is the symbol of  iridium ", "how is  iridium  represented", "how is  iridium  represented in symbol", "symbol of  iridium ", "what is the atomic number of  iridium ", "atomic number of  iridium ", "what is the electronic configuration of  iridium ", "electronic configuration of  iridium ", "Which group does  iridium  belongs to", "group of  iridium ", "Which period does  iridium  belongs to", "period of  iridium ", "what is the use of  iridium ", "use of  iridium ", "application of  iridium ", "what are the applications of  iridium ", "what is the atomic weight of  iridium ", "atomic weight of  iridium ", "give brief account of  iridium ", "describe  iridium ", "what is the mass number of the  iridium ", "mass number of the  iridium"],
+         "responses": ["Atomic Number: 77 \n\nName: Iridium \n\nSymbol: Ir \n\nGroup in periodic table: 9 \n\nAtomic Weight: 192.217 \n\nElectronic Configuration: [Xe] 4f14 5d7 6s2 \n\nUses:  fountain pen tips "],
+         "context_set": ""
+        },
+{"tag": "Platinum",
+         "patterns": ["what is the symbol of  platinum ", "how is  platinum  represented", "how is  platinum  represented in symbol", "symbol of  platinum ", "what is the atomic number of  platinum ", "atomic number of  platinum ", "what is the electronic configuration of  platinum ", "electronic configuration of  platinum ", "Which group does  platinum  belongs to", "group of  platinum ", "Which period does  platinum  belongs to", "period of  platinum ", "what is the use of  platinum ", "use of  platinum ", "application of  platinum ", "what are the applications of  platinum ", "what is the atomic weight of  platinum ", "atomic weight of  platinum ", "give brief account of  platinum ", "describe  platinum ", "what is the mass number of the  platinum ", "mass number of the  platinum"],
+         "responses": ["Atomic Number: 78 \n\nName: Platinum \n\nSymbol: Pt \n\nGroup in periodic table: 10 \n\nAtomic Weight: 195.078 \n\nElectronic Configuration: [Xe] 4f14 5d9 6s1 \n\nUses:  catalytic converters"],
+         "context_set": ""
+        },
+{"tag": "Gold",
+         "patterns": ["what is the symbol of  gold ", "how is  gold  represented", "how is  gold  represented in symbol", "symbol of  gold ", "what is the atomic number of  gold ", "atomic number of  gold ", "what is the electronic configuration of  gold ", "electronic configuration of  gold ", "Which group does  gold  belongs to", "group of  gold ", "Which period does  gold  belongs to", "period of  gold ", "what is the use of  gold ", "use of  gold ", "application of  gold ", "what are the applications of  gold ", "what is the atomic weight of  gold ", "atomic weight of  gold ", "give brief account of  gold ", "describe  gold ", "what is the mass number of the  gold ", "mass number of the  gold"],
+         "responses": ["Atomic Number: 79 \n\nName: Gold \n\nSymbol: Au \n\nGroup in periodic table: 11 \n\nAtomic Weight: 196.967 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s1 \n\nUses:  coinage "],
+         "context_set": ""
+        },
+{"tag": "Mercury",
+         "patterns": ["what is the symbol of  mercury ", "how is  mercury  represented", "how is  mercury  represented in symbol", "symbol of  mercury ", "what is the atomic number of  mercury ", "atomic number of  mercury ", "what is the electronic configuration of  mercury ", "electronic configuration of  mercury ", "Which group does  mercury  belongs to", "group of  mercury ", "Which period does  mercury  belongs to", "period of  mercury ", "what is the use of  mercury ", "use of  mercury ", "application of  mercury ", "what are the applications of  mercury ", "what is the atomic weight of  mercury ", "atomic weight of  mercury ", "give brief account of  mercury ", "describe  mercury ", "what is the mass number of the  mercury ", "mass number of the  mercury"],
+         "responses": ["Atomic Number: 80 \n\nName: Mercury \n\nSymbol: Hg \n\nGroup in periodic table: 12 \n\nAtomic Weight: 200.59 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s2 \n\nUses:  street  lights "],
+         "context_set": ""
+        },
+{"tag": "Thallium",
+         "patterns": ["what is the symbol of  thallium ", "how is  thallium  represented", "how is  thallium  represented in symbol", "symbol of  thallium ", "what is the atomic number of  thallium ", "atomic number of  thallium ", "what is the electronic configuration of  thallium ", "electronic configuration of  thallium ", "Which group does  thallium  belongs to", "group of  thallium ", "Which period does  thallium  belongs to", "period of  thallium ", "what is the use of  thallium ", "use of  thallium ", "application of  thallium ", "what are the applications of  thallium ", "what is the atomic weight of  thallium ", "atomic weight of  thallium ", "give brief account of  thallium ", "describe  thallium ", "what is the mass number of the  thallium ", "mass number of the  thallium"],
+         "responses": ["Atomic Number: 81 \n\nName: Thallium \n\nSymbol: Tl \n\nGroup in periodic table: 13 \n\nAtomic Weight: 204.383 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s2 6p1 \n\nUses:  rat poison"],
+         "context_set": ""
+        },
+{"tag": "Lead",
+         "patterns": ["what is the symbol of  lead ", "how is  lead  represented", "how is  lead  represented in symbol", "symbol of  lead ", "what is the atomic number of  lead ", "atomic number of  lead ", "what is the electronic configuration of  lead ", "electronic configuration of  lead ", "Which group does  lead  belongs to", "group of  lead ", "Which period does  lead  belongs to", "period of  lead ", "what is the use of  lead ", "use of  lead ", "application of  lead ", "what are the applications of  lead ", "what is the atomic weight of  lead ", "atomic weight of  lead ", "give brief account of  lead ", "describe  lead ", "what is the mass number of the  lead ", "mass number of the  lead"],
+         "responses": ["Atomic Number: 82 \n\nName: Lead \n\nSymbol: Pb \n\nGroup in periodic table: 14 \n\nAtomic Weight: 207.2 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s2 6p2 \n\nUses:  car batteries "],
+         "context_set": ""
+        },
+{"tag": "Bismuth",
+         "patterns": ["what is the symbol of  bismuth ", "how is  bismuth  represented", "how is  bismuth  represented in symbol", "symbol of  bismuth ", "what is the atomic number of  bismuth ", "atomic number of  bismuth ", "what is the electronic configuration of  bismuth ", "electronic configuration of  bismuth ", "Which group does  bismuth  belongs to", "group of  bismuth ", "Which period does  bismuth  belongs to", "period of  bismuth ", "what is the use of  bismuth ", "use of  bismuth ", "application of  bismuth ", "what are the applications of  bismuth ", "what is the atomic weight of  bismuth ", "atomic weight of  bismuth ", "give brief account of  bismuth ", "describe  bismuth ", "what is the mass number of the  bismuth ", "mass number of the  bismuth"],
+         "responses": ["Atomic Number: 83 \n\nName: Bismuth \n\nSymbol: Bi \n\nGroup in periodic table: 15 \n\nAtomic Weight: 208.98 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s2 6p3 \n\nUses:  fire detectors"],
+         "context_set": ""
+        },
+{"tag": "Polonium",
+         "patterns": ["what is the symbol of  polonium ", "how is  polonium  represented", "how is  polonium  represented in symbol", "symbol of  polonium ", "what is the atomic number of  polonium ", "atomic number of  polonium ", "what is the electronic configuration of  polonium ", "electronic configuration of  polonium ", "Which group does  polonium  belongs to", "group of  polonium ", "Which period does  polonium  belongs to", "period of  polonium ", "what is the use of  polonium ", "use of  polonium ", "application of  polonium ", "what are the applications of  polonium ", "what is the atomic weight of  polonium ", "atomic weight of  polonium ", "give brief account of  polonium ", "describe  polonium ", "what is the mass number of the  polonium ", "mass number of the  polonium "],
+         "responses": ["Atomic Number: 84 \n\nName: Polonium \n\nSymbol: Po \n\nGroup in periodic table: 16 \n\nAtomic Weight: 209 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s2 6p4 \n\nUses:  atomic heat source"],
+         "context_set": ""
+        },
+{"tag": "Astatine",
+         "patterns": ["what is the symbol of  astatine ", "how is  astatine  represented", "how is  astatine  represented in symbol", "symbol of  astatine ", "what is the atomic number of  astatine ", "atomic number of  astatine ", "what is the electronic configuration of  astatine ", "electronic configuration of  astatine ", "Which group does  astatine  belongs to", "group of  astatine ", "Which period does  astatine  belongs to", "period of  astatine ", "what is the use of  astatine ", "use of  astatine ", "application of  astatine ", "what are the applications of  astatine ", "what is the atomic weight of  astatine ", "atomic weight of  astatine ", "give brief account of  astatine ", "describe  astatine ", "what is the mass number of the  astatine ", "mass number of the  astatine"],
+         "responses": ["Atomic Number: 85 \n\nName: Astatine \n\nSymbol: At \n\nGroup in periodic table: 17 \n\nAtomic Weight: 210 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s2 6p5 \n\nUses:  treatment of cancer"],
+         "context_set": ""
+        },
+{"tag": "Radon",
+         "patterns": ["what is the symbol of  radon ", "how is  radon  represented", "how is  radon  represented in symbol", "symbol of  radon ", "what is the atomic number of  radon ", "atomic number of  radon ", "what is the electronic configuration of  radon ", "electronic configuration of  radon ", "Which group does  radon  belongs to", "group of  radon ", "Which period does  radon  belongs to", "period of  radon ", "what is the use of  radon ", "use of  radon ", "application of  radon ", "what are the applications of  radon ", "what is the atomic weight of  radon ", "atomic weight of  radon ", "give brief account of  radon ", "describe  radon ", "what is the mass number of the  radon ", "mass number of the  radon"],
+         "responses": ["Atomic Number: 86 \n\nName: Radon \n\nSymbol: Rn \n\nGroup in periodic table: 18 \n\nAtomic Weight: 222 \n\nElectronic Configuration: [Xe] 4f14 5d10 6s2 6p6 \n\nUses:  treating tumours "],
+         "context_set": ""
+        },
+{"tag": "Francium",
+         "patterns": ["what is the symbol of  francium ", "how is  francium  represented", "how is  francium  represented in symbol", "symbol of  francium ", "what is the atomic number of  francium ", "atomic number of  francium ", "what is the electronic configuration of  francium ", "electronic configuration of  francium ", "Which group does  francium  belongs to", "group of  francium ", "Which period does  francium  belongs to", "period of  francium ", "what is the use of  francium ", "use of  francium ", "application of  francium ", "what are the applications of  francium ", "what is the atomic weight of  francium ", "atomic weight of  francium ", "give brief account of  francium ", "describe  francium ", "what is the mass number of the  francium ", "mass number of the  francium"],
+         "responses": ["Atomic Number: 87 \n\nName: Francium \n\nSymbol: Fr \n\nGroup in periodic table: 1 \n\nAtomic Weight: 223 \n\nElectronic Configuration: [Rn] 7s1 \n\nUses:  atomic structure "],
+         "context_set": ""
+        },
+{"tag": "Radium",
+         "patterns": ["what is the symbol of  radium ", "how is  radium  represented", "how is  radium  represented in symbol", "symbol of  radium ", "what is the atomic number of  radium ", "atomic number of  radium ", "what is the electronic configuration of  radium ", "electronic configuration of  radium ", "Which group does  radium  belongs to", "group of  radium ", "Which period does  radium  belongs to", "period of  radium ", "what is the use of  radium ", "use of  radium ", "application of  radium ", "what are the applications of  radium ", "what is the atomic weight of  radium ", "atomic weight of  radium ", "give brief account of  radium ", "describe  radium ", "what is the mass number of the  radium ", "mass number of the  radium"],
+         "responses": ["Atomic Number: 88 \n\nName: Radium \n\nSymbol: Ra \n\nGroup in periodic table: 2 \n\nAtomic Weight: 226 \n\nElectronic Configuration: [Rn] 7s2 \n\nUses:  produce radon"],
+         "context_set": ""
+        },
+{"tag": "Actinium",
+         "patterns": ["what is the symbol of  actinium ", "how is  actinium  represented", "how is  actinium  represented in symbol", "symbol of  actinium ", "what is the atomic number of  actinium ", "atomic number of  actinium ", "what is the electronic configuration of  actinium ", "electronic configuration of  actinium ", "Which group does  actinium  belongs to", "group of  actinium ", "Which period does  actinium  belongs to", "period of  actinium ", "what is the use of  actinium ", "use of  actinium ", "application of  actinium ", "what are the applications of  actinium ", "what is the atomic weight of  actinium ", "atomic weight of  actinium ", "give brief account of  actinium ", "describe  actinium ", "what is the mass number of the  actinium ", "mass number of the  actinium"],
+         "responses": ["Atomic Number: 89 \n\nName: Actinium \n\nSymbol: Ac \n\nGroup in periodic table: 3 \n\nAtomic Weight: 227 \n\nElectronic Configuration: [Rn] 6d1 7s2 \n\nUses:  radio immunotherapy "],
+         "context_set": ""
+        },
+{"tag": "Thorium",
+         "patterns": ["what is the symbol of  thorium ", "how is  thorium  represented", "how is  thorium  represented in symbol", "symbol of  thorium ", "what is the atomic number of  thorium ", "atomic number of  thorium ", "what is the electronic configuration of  thorium ", "electronic configuration of  thorium ", "Which group does  thorium  belongs to", "group of  thorium ", "Which period does  thorium  belongs to", "period of  thorium ", "what is the use of  thorium ", "use of  thorium ", "application of  thorium ", "what are the applications of  thorium ", "what is the atomic weight of  thorium ", "atomic weight of  thorium ", "give brief account of  thorium ", "describe  thorium ", "what is the mass number of the  thorium ", "mass number of the  thorium"],
+         "responses": ["Atomic Number: 90 \n\nName: Thorium \n\nSymbol: Th \n\nGroup in periodic table: 102 \n\nAtomic Weight: 232.038 \n\nElectronic Configuration: [Rn] 6d2 7s2 \n\nUses:  coating filaments"],
+         "context_set": ""
+        },
+{"tag": "Protactinium",
+         "patterns": ["what is the symbol of  protactinium ", "how is  protactinium  represented", "how is  protactinium  represented in symbol", "symbol of  protactinium ", "what is the atomic number of  protactinium ", "atomic number of  protactinium ", "what is the electronic configuration of  protactinium ", "electronic configuration of  protactinium ", "Which group does  protactinium  belongs to", "group of  protactinium ", "Which period does  protactinium  belongs to", "period of  protactinium ", "what is the use of  protactinium ", "use of  protactinium ", "application of  protactinium ", "what are the applications of  protactinium ", "what is the atomic weight of  protactinium ", "atomic weight of  protactinium ", "give brief account of  protactinium ", "describe  protactinium ", "what is the mass number of the  protactinium ", "mass number of the  protactinium"],
+         "responses": ["Atomic Number: 91 \n\nName: Protactinium \n\nSymbol: Pa \n\nGroup in periodic table: 102 \n\nAtomic Weight: 231.036 \n\nElectronic Configuration: [Rn] 5f2 6d1 7s2 \n\nUses:  scientific research only"],
+         "context_set": ""
+        },
+{"tag": "Uranium",
+         "patterns": ["what is the symbol of  uranium ", "how is  uranium  represented", "how is  uranium  represented in symbol", "symbol of  uranium ", "what is the atomic number of  uranium ", "atomic number of  uranium ", "what is the electronic configuration of  uranium ", "electronic configuration of  uranium ", "Which group does  uranium  belongs to", "group of  uranium ", "Which period does  uranium  belongs to", "period of  uranium ", "what is the use of  uranium ", "use of  uranium ", "application of  uranium ", "what are the applications of  uranium ", "what is the atomic weight of  uranium ", "atomic weight of  uranium ", "give brief account of  uranium ", "describe  uranium ", "what is the mass number of the  uranium ", "mass number of the  uranium"],
+         "responses": ["Atomic Number: 92 \n\nName: Uranium \n\nSymbol: U \n\nGroup in periodic table: 102 \n\nAtomic Weight: 238.029 \n\nElectronic Configuration: [Rn] 5f3 6d1 7s2 \n\nUses:  nuclear fuel "],
+         "context_set": ""
+        },
+{"tag": "Neptunium",
+         "patterns": ["what is the symbol of  neptunium ", "how is  neptunium  represented", "how is  neptunium  represented in symbol", "symbol of  neptunium ", "what is the atomic number of  neptunium ", "atomic number of  neptunium ", "what is the electronic configuration of  neptunium ", "electronic configuration of  neptunium ", "Which group does  neptunium  belongs to", "group of  neptunium ", "Which period does  neptunium  belongs to", "period of  neptunium ", "what is the use of  neptunium ", "use of  neptunium ", "application of  neptunium ", "what are the applications of  neptunium ", "what is the atomic weight of  neptunium ", "atomic weight of  neptunium ", "give brief account of  neptunium ", "describe  neptunium ", "what is the mass number of the  neptunium ", "mass number of the  neptunium"],
+         "responses": ["Atomic Number: 93 \n\nName: Neptunium \n\nSymbol: Np \n\nGroup in periodic table: 102 \n\nAtomic Weight: 237 \n\nElectronic Configuration: [Rn] 5f4 6d1 7s2 \n\nUses:  spacecraft generators"],
+         "context_set": ""
+        },
+{"tag": "Plutonium",
+         "patterns": [ "what is the symbol of  plutonium ", "how is  plutonium  represented", "how is  plutonium  represented in symbol", "symbol of  plutonium ", "what is the atomic number of  plutonium ", "atomic number of  plutonium ", "what is the electronic configuration of  plutonium ", "electronic configuration of  plutonium ", "Which group does  plutonium  belongs to", "group of  plutonium ", "Which period does  plutonium  belongs to", "period of  plutonium ", "what is the use of  plutonium ", "use of  plutonium ", "application of  plutonium ", "what are the applications of  plutonium ", "what is the atomic weight of  plutonium ", "atomic weight of  plutonium ", "give brief account of  plutonium ", "describe  plutonium ", "what is the mass number of the  plutonium ", "mass number of the  plutonium"],
+         "responses": ["Atomic Number: 94 \n\nName: Plutonium \n\nSymbol: Pu \n\nGroup in periodic table: 102 \n\nAtomic Weight: 244 \n\nElectronic Configuration: [Rn] 5f6 7s2 \n\nUses:  nuclear weapons "],
+         "context_set": ""
+        },
+{"tag": "Americium",
+         "patterns": ["what is the symbol of  americium ", "how is  americium  represented", "how is  americium  represented in symbol", "symbol of  americium ", "what is the atomic number of  americium ", "atomic number of  americium ", "what is the electronic configuration of  americium ", "electronic configuration of  americium ", "Which group does  americium  belongs to", "group of  americium ", "Which period does  americium  belongs to", "period of  americium ", "what is the use of  americium ", "use of  americium ", "application of  americium ", "what are the applications of  americium ", "what is the atomic weight of  americium ", "atomic weight of  americium ", "give brief account of  americium ", "describe  americium ", "what is the mass number of the  americium ", "mass number of the  americium"],
+         "responses": ["Atomic Number: 95 \n\nName: Americium \n\nSymbol: Am \n\nGroup in periodic table: 102 \n\nAtomic Weight: 243 \n\nElectronic Configuration: [Rn] 5f7 7s2 \n\nUses:  smoke detectors"],
+         "context_set": ""
+        },
+{"tag": "Curium",
+         "patterns": ["what is the symbol of  curium ", "how is  curium  represented", "how is  curium  represented in symbol", "symbol of  curium ", "what is the atomic number of  curium ", "atomic number of  curium ", "what is the electronic configuration of  curium ", "electronic configuration of  curium ", "Which group does  curium  belongs to", "group of  curium ", "Which period does  curium  belongs to", "period of  curium ", "what is the use of  curium ", "use of  curium ", "application of  curium ", "what are the applications of  curium ", "what is the atomic weight of  curium ", "atomic weight of  curium ", "give brief account of  curium ", "describe  curium ", "what is the mass number of the  curium ", "mass number of the  curium"],
+         "responses": ["Atomic Number: 96 \n\nName: Curium \n\nSymbol: Cm \n\nGroup in periodic table: 102 \n\nAtomic Weight: 247 \n\nElectronic Configuration: [Rn]5f7 6d1 7s2 \n\nUses:  produce nuclear energy "],
+         "context_set": ""
+        },
+{"tag": "Berkelium",
+         "patterns": ["what is the symbol of  berkelium ", "how is  berkelium  represented", "how is  berkelium  represented in symbol", "symbol of  berkelium ", "what is the atomic number of  berkelium ", "atomic number of  berkelium ", "what is the electronic configuration of  berkelium ", "electronic configuration of  berkelium ", "Which group does  berkelium  belongs to", "group of  berkelium ", "Which period does  berkelium  belongs to", "period of  berkelium ", "what is the use of  berkelium ", "use of  berkelium ", "application of  berkelium ", "what are the applications of  berkelium ", "what is the atomic weight of  berkelium ", "atomic weight of  berkelium ", "give brief account of  berkelium ", "describe  berkelium ", "what is the mass number of the  berkelium ", "mass number of the  berkelium"],
+         "responses": ["Atomic Number: 97 \n\nName: Berkelium \n\nSymbol: Bk \n\nGroup in periodic table: 102 \n\nAtomic Weight: 247 \n\nElectronic Configuration: [Rn]5f9 7s2 \n\nUses:  atmospheric nuclear weapons"],
+         "context_set": ""
+        },
+{"tag": "Californium",
+         "patterns": ["what is the symbol of  californium ", "how is  californium  represented", "how is  californium  represented in symbol", "symbol of  californium ", "what is the atomic number of  californium ", "atomic number of  californium ", "what is the electronic configuration of  californium ", "electronic configuration of  californium ", "Which group does  californium  belongs to", "group of  californium ", "Which period does  californium  belongs to", "period of  californium ", "what is the use of  californium ", "use of  californium ", "application of  californium ", "what are the applications of  californium ", "what is the atomic weight of  californium ", "atomic weight of  californium ", "give brief account of  californium ", "describe  californium ", "what is the mass number of the  californium ", "mass number of the  californium"],
+         "responses": ["Atomic Number: 98 \n\nName: Californium \n\nSymbol: Cf \n\nGroup in periodic table: 102 \n\nAtomic Weight: 251 \n\nElectronic Configuration: [Rn]5f10 7s2 \n\nUses:  metal detectors "],
+         "context_set": ""
+        },
+{"tag": "Einsteinium",
+         "patterns": ["what is the symbol of  einsteinium ", "how is  einsteinium  represented", "how is  einsteinium  represented in symbol", "symbol of  einsteinium ", "what is the atomic number of  einsteinium ", "atomic number of  einsteinium ", "what is the electronic configuration of  einsteinium ", "electronic configuration of  einsteinium ", "Which group does  einsteinium  belongs to", "group of  einsteinium ", "Which period does  einsteinium  belongs to", "period of  einsteinium ", "what is the use of  einsteinium ", "use of  einsteinium ", "application of  einsteinium ", "what are the applications of  einsteinium ", "what is the atomic weight of  einsteinium ", "atomic weight of  einsteinium ", "give brief account of  einsteinium ", "describe  einsteinium ", "what is the mass number of the  einsteinium ", "mass number of the  einsteinium"],
+         "responses": ["Atomic Number: 99 \n\nName: Einsteinium \n\nSymbol: Es \n\nGroup in periodic table: 102 \n\nAtomic Weight: 252 \n\nElectronic Configuration: [Rn]5f11 7s2 \n\nUses:  only in research"],
+         "context_set": ""
+        },
+{"tag": "Fermium",
+         "patterns": ["what is the symbol of  fermium ", "how is  fermium  represented", "how is  fermium  represented in symbol", "symbol of  fermium ", "what is the atomic number of  fermium ", "atomic number of  fermium ", "what is the electronic configuration of  fermium ", "electronic configuration of  fermium ", "Which group does  fermium  belongs to", "group of  fermium ", "Which period does  fermium  belongs to", "period of  fermium ", "what is the use of  fermium ", "use of  fermium ", "application of  fermium ", "what are the applications of  fermium ", "what is the atomic weight of  fermium ", "atomic weight of  fermium ", "give brief account of  fermium ", "describe  fermium ", "what is the mass number of the  fermium ", "mass number of the  fermium"],
+         "responses": ["Atomic Number: 100 \n\nName: Fermium \n\nSymbol: Fm \n\nGroup in periodic table: 102 \n\nAtomic Weight: 257 \n\nElectronic Configuration: [Rn]5f12 7s2 \n\nUses:  research field"],
+         "context_set": ""
+        },
+{"tag": "Mendelevium",
+         "patterns": ["what is the symbol of  mendelevium ", "how is  mendelevium  represented", "how is  mendelevium  represented in symbol", "symbol of  mendelevium ", "what is the atomic number of  mendelevium ", "atomic number of  mendelevium ", "what is the electronic configuration of  mendelevium ", "electronic configuration of  mendelevium ", "Which group does  mendelevium  belongs to", "group of  mendelevium ", "Which period does  mendelevium  belongs to", "period of  mendelevium ", "what is the use of  mendelevium ", "use of  mendelevium ", "application of  mendelevium ", "what are the applications of  mendelevium ", "what is the atomic weight of  mendelevium ", "atomic weight of  mendelevium ", "give brief account of  mendelevium ", "describe  mendelevium ", "what is the mass number of the  mendelevium ", "mass number of the  mendelevium "],
+         "responses": ["Atomic Number: 101 \n\nName: Mendelevium \n\nSymbol: Md \n\nGroup in periodic table: 102 \n\nAtomic Weight: 258 \n\nElectronic Configuration: [Rn]5f13 7s2 \n\nUses:  only in research "],
+         "context_set": ""
+        },
+{"tag": "Nobelium",
+         "patterns": ["what is the symbol of  nobelium ", "how is  nobelium  represented", "how is  nobelium  represented in symbol", "symbol of  nobelium ", "what is the atomic number of  nobelium ", "atomic number of  nobelium ", "what is the electronic configuration of  nobelium ", "electronic configuration of  nobelium ", "Which group does  nobelium  belongs to", "group of  nobelium ", "Which period does  nobelium  belongs to", "period of  nobelium ", "what is the use of  nobelium ", "use of  nobelium ", "application of  nobelium ", "what are the applications of  nobelium ", "what is the atomic weight of  nobelium ", "atomic weight of  nobelium ", "give brief account of  nobelium ", "describe  nobelium ", "what is the mass number of the  nobelium ", "mass number of the  nobelium"],
+         "responses": ["Atomic Number: 102 \n\nName: Nobelium \n\nSymbol: No \n\nGroup in periodic table: 102 \n\nAtomic Weight: 259 \n\nElectronic Configuration: [Rn]5f14 7s2 \n\nUses:  research field "],
+         "context_set": ""
+        },
+{"tag": "Lawrencium",
+         "patterns": ["what is the symbol of  lawrencium ", "how is  lawrencium  represented", "how is  lawrencium  represented in symbol", "symbol of  lawrencium ", "what is the atomic number of  lawrencium ", "atomic number of  lawrencium ", "what is the electronic configuration of  lawrencium ", "electronic configuration of  lawrencium ", "Which group does  lawrencium  belongs to", "group of  lawrencium ", "Which period does  lawrencium  belongs to", "period of  lawrencium ", "what is the use of  lawrencium ", "use of  lawrencium ", "application of  lawrencium ", "what are the applications of  lawrencium ", "what is the atomic weight of  lawrencium ", "atomic weight of  lawrencium ", "give brief account of  lawrencium ", "describe  lawrencium ", "what is the mass number of the  lawrencium ", "mass number of the  lawrencium "],
+         "responses": ["Atomic Number: 103 \n\nName: Lawrencium \n\nSymbol: Lr \n\nGroup in periodic table: 102 \n\nAtomic Weight: 262 \n\nElectronic Configuration: [Rn]5f14 7s2 7p1 \n\nUses:  only in research "],
+         "context_set": ""
+        },
+{"tag": "Rutherfordium",
+         "patterns": ["what is the symbol of  rutherfordium ", "how is  rutherfordium  represented", "how is  rutherfordium  represented in symbol", "symbol of  rutherfordium ", "what is the atomic number of  rutherfordium ", "atomic number of  rutherfordium ", "what is the electronic configuration of  rutherfordium ", "electronic configuration of  rutherfordium ", "Which group does  rutherfordium  belongs to", "group of  rutherfordium ", "Which period does  rutherfordium  belongs to", "period of  rutherfordium ", "what is the use of  rutherfordium ", "use of  rutherfordium ", "application of  rutherfordium ", "what are the applications of  rutherfordium ", "what is the atomic weight of  rutherfordium ", "atomic weight of  rutherfordium ", "give brief account of  rutherfordium ", "describe  rutherfordium ", "what is the mass number of the  rutherfordium ", "mass number of the  rutherfordium"],
+         "responses": ["Atomic Number: 104 \n\nName: Rutherfordium \n\nSymbol: Rf \n\nGroup in periodic table: 4 \n\nAtomic Weight: 261 \n\nElectronic Configuration: [Rn]5f14 6d2 7s2 \n\nUses:  research field"],
+         "context_set": ""
+        },
+{"tag": "Dubnium",
+         "patterns": ["what is the symbol of  dubnium ", "how is  dubnium  represented", "how is  dubnium  represented in symbol", "symbol of  dubnium ", "what is the atomic number of  dubnium ", "atomic number of  dubnium ", "what is the electronic configuration of  dubnium ", "electronic configuration of  dubnium ", "Which group does  dubnium  belongs to", "group of  dubnium ", "Which period does  dubnium  belongs to", "period of  dubnium ", "what is the use of  dubnium ", "use of  dubnium ", "application of  dubnium ", "what are the applications of  dubnium ", "what is the atomic weight of  dubnium ", "atomic weight of  dubnium ", "give brief account of  dubnium ", "describe  dubnium ", "what is the mass number of the  dubnium ", "mass number of the  dubnium"],
+         "responses": ["Atomic Number: 105 \n\nName: Dubnium \n\nSymbol: Db \n\nGroup in periodic table: 5 \n\nAtomic Weight: 262 \n\nElectronic Configuration: *[Rn] 5f14 6d3 7s2 \n\nUses:  only in research "],
+         "context_set": ""
+        },
+{"tag": "Seaborgium",
+         "patterns": ["what is the symbol of  seaborgium ", "how is  seaborgium  represented", "how is  seaborgium  represented in symbol", "symbol of  seaborgium ", "what is the atomic number of  seaborgium ", "atomic number of  seaborgium ", "what is the electronic configuration of  seaborgium ", "electronic configuration of  seaborgium ", "Which group does  seaborgium  belongs to", "group of  seaborgium ", "Which period does  seaborgium  belongs to", "period of  seaborgium ", "what is the use of  seaborgium ", "use of  seaborgium ", "application of  seaborgium ", "what are the applications of  seaborgium ", "what is the atomic weight of  seaborgium ", "atomic weight of  seaborgium ", "give brief account of  seaborgium ", "describe  seaborgium ", "what is the mass number of the  seaborgium ", "mass number of the  seaborgium"],
+         "responses": ["Atomic Number: 106 \n\nName: Seaborgium \n\nSymbol: Sg \n\nGroup in periodic table: 6 \n\nAtomic Weight: 266 \n\nElectronic Configuration: *[Rn] 5f14 6d4 7s2 \n\nUses:  research field "],
+         "context_set": ""
+        },
+{"tag": "Bohrium",
+         "patterns": ["what is the symbol of  bohrium ", "how is  bohrium  represented", "how is  bohrium  represented in symbol", "symbol of  bohrium ", "what is the atomic number of  bohrium ", "atomic number of  bohrium ", "what is the electronic configuration of  bohrium ", "electronic configuration of  bohrium ", "Which group does  bohrium  belongs to", "group of  bohrium ", "Which period does  bohrium  belongs to", "period of  bohrium ", "what is the use of  bohrium ", "use of  bohrium ", "application of  bohrium ", "what are the applications of  bohrium ", "what is the atomic weight of  bohrium ", "atomic weight of  bohrium ", "give brief account of  bohrium ", "describe  bohrium ", "what is the mass number of the  bohrium ", "mass number of the  bohrium"],
+         "responses": ["Atomic Number: 107 \n\nName: Bohrium \n\nSymbol: Bh \n\nGroup in periodic table: 7 \n\nAtomic Weight: 264 \n\nElectronic Configuration: *[Rn] 5f14 6d5 7s2 \n\nUses:  only in research "],
+         "context_set": ""
+        },
+{"tag": "Hassium",
+         "patterns": ["what is the symbol of  hassium ", "how is  hassium  represented", "how is  hassium  represented in symbol", "symbol of  hassium ", "what is the atomic number of  hassium ", "atomic number of  hassium ", "what is the electronic configuration of  hassium ", "electronic configuration of  hassium ", "Which group does  hassium  belongs to", "group of  hassium ", "Which period does  hassium  belongs to", "period of  hassium ", "what is the use of  hassium ", "use of  hassium ", "application of  hassium ", "what are the applications of  hassium ", "what is the atomic weight of  hassium ", "atomic weight of  hassium ", "give brief account of  hassium ", "describe  hassium ", "what is the mass number of the  hassium ", "mass number of the  hassium"],
+         "responses": ["Atomic Number: 108 \n\nName: Hassium \n\nSymbol: Hs \n\nGroup in periodic table: 8 \n\nAtomic Weight: 277 \n\nElectronic Configuration: *[Rn] 5f14 6d6 7s2 \n\nUses:  research field "],
+         "context_set": ""
+        },
+{"tag": "Meitnerium",
+         "patterns": ["what is the symbol of  meitnerium ", "how is  meitnerium  represented", "how is  meitnerium  represented in symbol", "symbol of  meitnerium ", "what is the atomic number of  meitnerium ", "atomic number of  meitnerium ", "what is the electronic configuration of  meitnerium ", "electronic configuration of  meitnerium ", "Which group does  meitnerium  belongs to", "group of  meitnerium ", "Which period does  meitnerium  belongs to", "period of  meitnerium ", "what is the use of  meitnerium ", "use of  meitnerium ", "application of  meitnerium ", "what are the applications of  meitnerium ", "what is the atomic weight of  meitnerium ", "atomic weight of  meitnerium ", "give brief account of  meitnerium ", "describe  meitnerium ", "what is the mass number of the  meitnerium ", "mass number of the  meitnerium"],
+         "responses": ["Atomic Number: 109 \n\nName: Meitnerium \n\nSymbol: Mt \n\nGroup in periodic table: 9 \n\nAtomic Weight: 268 \n\nElectronic Configuration: *[Rn ]5f14 6d7 7s2 \n\nUses:  only in research"],
+         "context_set": ""
+        },
+{"tag": "Darmstadtium",
+         "patterns": ["what is the symbol of  darmstadtium ", "how is  darmstadtium  represented", "how is  darmstadtium  represented in symbol", "symbol of  darmstadtium ", "what is the atomic number of  darmstadtium ", "atomic number of  darmstadtium ", "what is the electronic configuration of  darmstadtium ", "electronic configuration of  darmstadtium ", "Which group does  darmstadtium  belongs to", "group of  darmstadtium ", "Which period does  darmstadtium  belongs to", "period of  darmstadtium ", "what is the use of  darmstadtium ", "use of  darmstadtium ", "application of  darmstadtium ", "what are the applications of  darmstadtium ", "what is the atomic weight of  darmstadtium ", "atomic weight of  darmstadtium ", "give brief account of  darmstadtium ", "describe  darmstadtium ", "what is the mass number of the  darmstadtium ", "mass number of the  darmstadtium "],
+         "responses": ["Atomic Number: 110 \n\nName: Darmstadtium \n\nSymbol: Ds \n\nGroup in periodic table: 10 \n\nAtomic Weight: 281 \n\nElectronic Configuration: *[Rn] 5f14 6d9 7s1 \n\nUses:  research field "],
+         "context_set": ""
+        },
+{"tag": "Roentgenium",
+         "patterns": ["what is the symbol of  roentgenium ", "how is  roentgenium  represented", "how is  roentgenium  represented in symbol", "symbol of  roentgenium ", "what is the atomic number of  roentgenium ", "atomic number of  roentgenium ", "what is the electronic configuration of  roentgenium ", "electronic configuration of  roentgenium ", "Which group does  roentgenium  belongs to", "group of  roentgenium ", "Which period does  roentgenium  belongs to", "period of  roentgenium ", "what is the use of  roentgenium ", "use of  roentgenium ", "application of  roentgenium ", "what are the applications of  roentgenium ", "what is the atomic weight of  roentgenium ", "atomic weight of  roentgenium ", "give brief account of  roentgenium ", "describe  roentgenium ", "what is the mass number of the  roentgenium ", "mass number of the  roentgenium"],
+         "responses": ["Atomic Number: 111 \n\nName: Roentgenium \n\nSymbol: Rg \n\nGroup in periodic table: 11 \n\nAtomic Weight: 281 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s1 \n\nUses:  only in research"],
+         "context_set": ""
+        },
+{"tag": "Copernicium",
+         "patterns": ["what is the symbol of  copernicium ", "how is  copernicium  represented", "how is  copernicium  represented in symbol", "symbol of  copernicium ", "what is the atomic number of  copernicium ", "atomic number of  copernicium ", "what is the electronic configuration of  copernicium ", "electronic configuration of  copernicium ", "Which group does  copernicium  belongs to", "group of  copernicium ", "Which period does  copernicium  belongs to", "period of  copernicium ", "what is the use of  copernicium ", "use of  copernicium ", "application of  copernicium ", "what are the applications of  copernicium ", "what is the atomic weight of  copernicium ", "atomic weight of  copernicium ", "give brief account of  copernicium ", "describe  copernicium ", "what is the mass number of the  copernicium ", "mass number of the  copernicium"],
+         "responses": ["Atomic Number: 112 \n\nName: Copernicium \n\nSymbol: Cn \n\nGroup in periodic table: 12 \n\nAtomic Weight: 285 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s2 \n\nUses:  research field"],
+         "context_set": ""
+        },
+{"tag": "Nihonium",
+         "patterns": ["what is the symbol of  nihonium ", "how is  nihonium  represented", "how is  nihonium  represented in symbol", "symbol of  nihonium ", "what is the atomic number of  nihonium ", "atomic number of  nihonium ", "what is the electronic configuration of  nihonium ", "electronic configuration of  nihonium ", "Which group does  nihonium  belongs to", "group of  nihonium ", "Which period does  nihonium  belongs to", "period of  nihonium ", "what is the use of  nihonium ", "use of  nihonium ", "application of  nihonium ", "what are the applications of  nihonium ", "what is the atomic weight of  nihonium ", "atomic weight of  nihonium ", "give brief account of  nihonium ", "describe  nihonium ", "what is the mass number of the  nihonium ", "mass number of the  nihonium"],
+         "responses": ["Atomic Number: 113 \n\nName: Nihonium \n\nSymbol: Nh \n\nGroup in periodic table: 13 \n\nAtomic Weight: 286 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s2 7p1 \n\nUses:  only in research"],
+         "context_set": ""
+        },
+{"tag": "Flerovium",
+         "patterns": ["what is the symbol of  flerovium ", "how is  flerovium  represented", "how is  flerovium  represented in symbol", "symbol of  flerovium ", "what is the atomic number of  flerovium ", "atomic number of  flerovium ", "what is the electronic configuration of  flerovium ", "electronic configuration of  flerovium ", "Which group does  flerovium  belongs to", "group of  flerovium ", "Which period does  flerovium  belongs to", "period of  flerovium ", "what is the use of  flerovium ", "use of  flerovium ", "application of  flerovium ", "what are the applications of  flerovium ", "what is the atomic weight of  flerovium ", "atomic weight of  flerovium ", "give brief account of  flerovium ", "describe  flerovium ", "what is the mass number of the  flerovium ", "mass number of the  flerovium"],
+         "responses": ["Atomic Number: 114 \n\nName: Flerovium \n\nSymbol: Fl \n\nGroup in periodic table: 14 \n\nAtomic Weight: 289 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s2 7p2 \n\nUses:  research field"],
+         "context_set": ""
+        },
+{"tag": "Moscovium",
+         "patterns": ["what is the symbol of  moscovium ", "how is  moscovium  represented", "how is  moscovium  represented in symbol", "symbol of  moscovium ", "what is the atomic number of  moscovium ", "atomic number of  moscovium ", "what is the electronic configuration of  moscovium ", "electronic configuration of  moscovium ", "Which group does  moscovium  belongs to", "group of  moscovium ", "Which period does  moscovium  belongs to", "period of  moscovium ", "what is the use of  moscovium ", "use of  moscovium ", "application of  moscovium ", "what are the applications of  moscovium ", "what is the atomic weight of  moscovium ", "atomic weight of  moscovium ", "give brief account of  moscovium ", "describe  moscovium ", "what is the mass number of the  moscovium ", "mass number of the  moscovium"],
+         "responses": ["Atomic Number: 115 \n\nName: Moscovium \n\nSymbol: Mc \n\nGroup in periodic table: 15 \n\nAtomic Weight: 289 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s2 7p3 \n\nUses:  only in research"],
+         "context_set": ""
+        },
+{"tag": "Livermorium",
+         "patterns": ["what is the symbol of  livermorium ", "how is  livermorium  represented", "how is  livermorium  represented in symbol", "symbol of  livermorium ", "what is the atomic number of  livermorium ", "atomic number of  livermorium ", "what is the electronic configuration of  livermorium ", "electronic configuration of  livermorium ", "Which group does  livermorium  belongs to", "group of  livermorium ", "Which period does  livermorium  belongs to", "period of  livermorium ", "what is the use of  livermorium ", "use of  livermorium ", "application of  livermorium ", "what are the applications of  livermorium ", "what is the atomic weight of  livermorium ", "atomic weight of  livermorium ", "give brief account of  livermorium ", "describe  livermorium ", "what is the mass number of the  livermorium ", "mass number of the  livermorium"],
+         "responses": ["Atomic Number: 116 \n\nName: Livermorium \n\nSymbol: Lv \n\nGroup in periodic table: 16 \n\nAtomic Weight: 293 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s2 7p4 \n\nUses:  research field "],
+         "context_set": ""
+        },
+{"tag": "Tennessine",
+         "patterns": ["what is the symbol of  tennessine ", "how is  tennessine  represented", "how is  tennessine  represented in symbol", "symbol of  tennessine ", "what is the atomic number of  tennessine ", "atomic number of  tennessine ", "what is the electronic configuration of  tennessine ", "electronic configuration of  tennessine ", "Which group does  tennessine  belongs to", "group of  tennessine ", "Which period does  tennessine  belongs to", "period of  tennessine ", "what is the use of  tennessine ", "use of  tennessine ", "application of  tennessine ", "what are the applications of  tennessine ", "what is the atomic weight of  tennessine ", "atomic weight of  tennessine ", "give brief account of  tennessine ", "describe  tennessine ", "what is the mass number of the  tennessine ", "mass number of the  tennessine"],
+         "responses": ["Atomic Number: 117 \n\nName: Tennessine \n\nSymbol: Ts \n\nGroup in periodic table: 17 \n\nAtomic Weight: 293 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s2 7p5 \n\nUses:  only in research"],
+         "context_set": ""
+        },
+{"tag": "Oganesson",
+         "patterns": ["what is the symbol of  oganesson ", "how is  oganesson  represented", "how is  oganesson  represented in symbol", "symbol of  oganesson ", "what is the atomic number of  oganesson ", "atomic number of  oganesson ", "what is the electronic configuration of  oganesson ", "electronic configuration of  oganesson ", "Which group does  oganesson  belongs to", "group of  oganesson ", "Which period does  oganesson  belongs to", "period of  oganesson ", "what is the use of  oganesson ", "use of  oganesson ", "application of  oganesson ", "what are the applications of  oganesson ", "what is the atomic weight of  oganesson ", "atomic weight of  oganesson ", "give brief account of  oganesson ", "describe  oganesson ", "what is the mass number of the  oganesson ", "mass number of the  oganesson"],
+         "responses": ["Atomic Number: 118 \n\nName: Oganesson \n\nSymbol: Og \n\nGroup in periodic table: 18 \n\nAtomic Weight: 294 \n\nElectronic Configuration: *[Rn] 5f14 6d10 7s2 7p6 \n\nUses:  research field "],
+         "context_set": ""
+        }
+]}
+
+
+
+
